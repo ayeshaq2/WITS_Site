@@ -5,14 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Initiatives</title>
-	
 	<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="initiatives.css">
-
 	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-
-	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
- 
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     
     
@@ -22,27 +17,40 @@
 <body>
 	<div class="initbg">
 		<div class="margin">
-			<div class="topnav" style="margin-top:15px">
-  				<a style="padding: 10px 2px;" href="#"><img src="images/wits.png" alt="wits logo" width="100%"></a>
-  				<div class="topnav-right">
-    				<a href="#search"><p>INITIATIVES</p></a>
-    				<a href="#about"><p>PARTNER</p></a>
-    				<a href="#about"><p>ABOUT US</p></a>
-    					<a href="#about"class="navbutton" style="color:white;"><p>JOIN US</p></a>
-  				</div>
+		<!-- responsive navbar -->
+			<div class="topnav" id="myTopnav" style="padding: 5px">
+  				<a style="padding: 10px 2px;" href="index.html"><img src="images/wits.png" alt="wits logo"></a>
+  				<a href="membership.html"style="float:right; background:#E57154; border-radius: 10px; color: white"><p>JOIN US</p></a>
+  				<a href="about.html"style="float:right"><p>ABOUT US</p></a>
+  				<a href="partners.html"style="float:right"><p>PARTNER</p></a>
+  				<a href="initiatives.html"style="float:right"><p>INITIATIVES</p></a>
+  				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 			</div>
+			
+		<!-- js to make navbar responsive -->
+			<script>
+				function myFunction() {
+  					var x = document.getElementById("myTopnav");
+  					if (x.className === "topnav") {
+    					x.className += " responsive";
+  					} else {
+    					x.className = "topnav";
+  					}
+				}
+			</script>
 
 			<div class="marginTop10">
-
+			
+			<!-- contain main text and image into a banner-->
 				<table>
 					<tr>
-					<td style="width: 60%">
+					<td style="width: 50%">
 						<h1>Initiatives<h1>
-						<h4>WITS delivers a series of initiatives designed to inspire and equip.
+						<h4 style="color: #0A2338;">WITS delivers a series of initiatives designed to inspire and equip.
 						We provide our community with access to informative panels, educationals, workshops, inspirational speakers, and SheHacks, one of Canada’s largest all-female hackathons.</h4>
 						
 					</td>
-					<td style="width: 60%">
+					<td style="width: 50%">
 						<img src="images/computer.png" alt="main pic" class="responsive" width="300px" height="300px">
 					</td>
 					</tr>
@@ -51,10 +59,10 @@
 			
 			<div class="marginTop30">
 		
-				<div class="containerRectangle">
-  					<div class="colum" style="margin-left: 10%; margin-top: 5%">
+				<a href="events.html" style="text-decoration: none" class="containerRectangle">
+  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
     					<div>
-      						<h2>Events & <br>Educationals</h2>
+      						<h2>Events & Educationals</h2>
     					</div>
     					
     					<div>
@@ -65,13 +73,13 @@
     					<img src="images/events.png" style="width: 100%">
   					</div>
 
-				</div>
+				</a>
 			</div>
 			
 			<div class="marginTop10">
 		
-				<div class="containerRectangle">
-  					<div class="colum" style="margin-left: 10%; margin-top 5%">
+				<a href="ada.html" style="text-decoration: none" class="containerRectangle">
+  					<div class="colum" style="margin-left: 5%; margin-top 2%">
     					<div>
       						<h2>Mentorship Programs</h2>
     					</div>
@@ -84,13 +92,13 @@
     					<img src="images/mentorship.png" style="width: 100%">
   					</div>
 
-				</div>
+				</a>
 			</div>
 			
 			<div class="marginTop10">
 		
-				<div class="containerRectangle">
-  					<div class="colum" style="margin-left: 10%; margin-top: 5%">
+				<a href="blog.html" style="text-decoration: none" class="containerRectangle">
+  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
     					<div>
       						<h2>Blog & Podcast</h2>
     					</div>
@@ -103,7 +111,7 @@
     					<img src="images/blog.png" style="width: 100%">
   					</div>
 
-				</div>
+				</a>
 			</div>
 		
 		</div>
@@ -111,91 +119,96 @@
 	
 	<div class="initbg2">
 	
-		<div class="margin" style="margin-top: 20%">
+		<div class="margin" style="margin-top: 25%">
 			<h2>Upcoming <br> Events </h2>
 			
 			<div class="marginTop10">
 		
-				<div class="containerRectangle">
-  					<div class="colum" style="margin-left: 10%; margin-top: 5%">
+				<a href="events.html" style="text-decoration: none" class="containerRectangle">
+  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
     					<div>
-      						<h2>Event 1</h2>
+      						<h2 style="line-height:80%">Event 1</h2>
     					</div>
+    					
+      					<div class="rectangle" style="background: #C4C4C4; margin-left:2.5%"></div>
+    					
     					<div>
-      						<div class="rectangle"></div>
-    					</div>
-    					<div>
-      						<h4 style="font-size:1.5vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
+      						<h4 style="font-size:1.2vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
+      						<br><br>
     					</div>
   					</div>
   					<div class="image">
     					<img src="images/gray.png" style="width: 100%">
   					</div>
 
-				</div>
+				</a>
 			</div>
 			
 			<div class="marginTop10">
 		
-				<div class="containerRectangle">
-  					<div class="colum" style="margin-left: 10%; margin-top: 5%">
+				<a href="events.html" style="text-decoration: none" class="containerRectangle">
+  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
     					<div>
-      						<h2>Event 2</h2>
+      						<h2 style="line-height:80%">Event 1</h2>
     					</div>
+    					
+      					<div class="rectangle" style="background: #E68976; margin-left:2.5%"></div>
+    					
     					<div>
-      						<div class="rectangle"></div>
-    					</div>
-    					<div>
-      						<h4 style="font-size:1.5vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
+      						<h4 style="font-size:1.2vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
+      						<br><br>
     					</div>
   					</div>
   					<div class="image">
     					<img src="images/gray.png" style="width: 100%">
   					</div>
 
-				</div>
+				</a>
 			</div>
 			
 			<div class="marginTop10">
 		
-				<div class="containerRectangle">
-  					<div class="colum" style="margin-left: 10%; margin-top: 5%">
+				<a href="events.html" style="text-decoration: none" class="containerRectangle">
+  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
     					<div>
-      						<h2>Event 2</h2>
+      						<h2 style="line-height:80%">Event 1</h2>
     					</div>
+    					
+      					<div class="rectangle" style="background: #F4D089; margin-left:2.5%"></div>
+    					
     					<div>
-      						<div class="rectangle"></div>
-    					</div>
-    					<div>
-      						<h4 style="font-size:1.5vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
+      						<h4 style="font-size:1.2vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
+      						<br><br>
     					</div>
   					</div>
   					<div class="image">
     					<img src="images/gray.png" style="width: 100%">
   					</div>
 
-				</div>
+				</a>
 			</div>
 			
 			<div class="marginTop10">
-		
-				<div class="containerRectangle">
-  					<div class="colum" style="margin-left: 10%; margin-top: 5%">
+				
+				
+				<!-- the images will be replaced -->
+				<a href="events.html" style="text-decoration: none" class="containerRectangle">
+  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
     					<div>
-      						<h2>Event 2</h2>
+      						<h2 style="line-height:80%">Event 1</h2>
     					</div>
+    					
+      					<div class="rectangle" style="background: #F4D089; margin-left:2.5%"></div>
+    					
     					<div>
-      						<div class="rectangle"></div>
-    					</div>
-    					<div>
-      						<h4 style="font-size:1.5vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
+      						<h4 style="font-size:1.2vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
+      						<br><br>
     					</div>
   					</div>
   					<div class="image">
     					<img src="images/gray.png" style="width: 100%">
   					</div>
-
-				</div>
+				</a>
 			</div>
 			
 			<div class="marginTop20">
@@ -203,6 +216,7 @@
 				<h2>Past Events </h2>
 			</div>
 			<div class="cardContainer">
+			<!-- the images will be replaced -->
 				<div class="card" style="background-color:white;">
 					<img src="images/gray.png" alt="Avatar" style="width:100%">
 					<h2 style="font-size:1.5vw; margin-left: 10%">Event </h2>
@@ -251,11 +265,11 @@
 			<h4 style="font-family:helvetica; font-size: 1vw">Women in Technology Society</h4>
 			<h4 style="font-family:helvetica; font-size: 1vw">1151 Richmond St, London, ON N6A 3K7</h4>
 			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">wits.uwo@gmail.com</h4>
-			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">Made with &#10084;&#65039; in London, ON </h4>
+			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">Made with &#10084;&#65039; in London, ON <span style="float:right; font-weight:normal"> Social Media </span></h4>
 
-			<div style="float:right"><a href="http://www.instagram.com/wits.uwo/"><img src="images/i.png" alt="instagram" style="width: 100%"></a></div>
-			<div style="float:right"><a href="http://www.twitter.com/wits.uwo/"><img src="images/t.png" alt="twitter" style="width: 100%"></a></div>
-			<div style="float:right"><a href="http://www.facebook.com/wits.uwo/"><img src="images/f.png" alt="facebook" style="width: 100%"></a></div>
+			<div style="float:right"><a href="http://www.instagram.com/wits.uwo/"><img src="images/i.png" alt="instagram" style="width: 100%" id="footerimg"></a></div>
+			<div style="float:right"><a href="http://www.twitter.com/wits.uwo/"><img src="images/t.png" alt="twitter" style="width: 100%" id="footerimg"></a></div>
+			<div style="float:right"><a href="http://www.facebook.com/wits.uwo/"><img src="images/f.png" alt="facebook" style="width: 100%" id="footerimg"></a></div>
 
 		</div>
 	</div>

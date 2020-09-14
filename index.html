@@ -5,18 +5,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home</title>
-	
 	<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    
-    
-
 </head>
 
 <body>
@@ -24,19 +16,33 @@
 
 	<div class="bg1">
 		<div class="margin">
-			<div class="topnav" style="margin-top:15px">
-  				<a style="padding: 10px 2px;" href="#"><img src="images/wits.png" alt="wits logo" class="responsive" width="300px" height="200px"></a>
- 
-  				<div class="topnav-right">
-    				<a href="#search"><p>INITIATIVES</p></a>
-    				<a href="#about"><p>PARTNER</p></a>
-    				<a href="#about"><p>ABOUT US</p></a>
-    					<a href="#about"class="navbutton" style="color:white;"><p>JOIN US</p></a>
-  				</div>
+		
+			<!-- responsive navbar -->
+		
+			<div class="topnav" id="myTopnav" style="padding: 5px">
+  				<a style="padding: 10px 2px;" href="index.html"><img src="images/wits.png" alt="wits logo"></a>
+  				<a href="membership.html"style="float:right; background:#E57154; border-radius: 10px; color: white"><p>JOIN US</p></a>
+  				<a href="about.html"style="float:right"><p>ABOUT US</p></a>
+  				<a href="partners.html"style="float:right"><p>PARTNER</p></a>
+  				<a href="initiatives.html"style="float:right"><p>INITIATIVES</p></a>
+  				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
 			</div>
+			
+			<!-- js to make the navbar responsive -->
+			<script>
+				function myFunction() {
+  					var x = document.getElementById("myTopnav");
+  					if (x.className === "topnav") {
+    					x.className += " responsive";
+  					} else {
+    					x.className = "topnav";
+  					}
+				}
+			</script>
 
 			<div class="marginTop10">
-
+			
+				<!-- containing the main text and image in a table -->
 				<table>
 					<tr>
 					<td style="width: 50%">
@@ -51,7 +57,7 @@
 				</table>
 			</div>
 
-
+			<!-- 3 mission goals -->
 			<div style="margin-top: 30%">
 				<div class="row">
   					<div class="column">
@@ -67,21 +73,21 @@
 			</div>
 			
 		
-		
-
-
+			
 			<div class="marginTop10">
 				
 				
 				<h3>EVENTS <div style="float:right">
 					<span onclick="pre()"><i class='fas fa-long-arrow-alt-left' style='font-size:2vw; color: #ED4D47'></i></span>   <span onclick="next()"><i class='fas fa-long-arrow-alt-right' style='font-size:2vw; color: #ED4D47'></i>  </span>
 					<br>
-					</div></h3>
+					</div>
+				</h3>
 				
+				<!-- events carousel -->
 				<table>
 				<tr>
 				<td>
-					<h2>Upcoming <br>Events <br><br><br><br></h2>
+					<h2>Upcoming <br>Events <br><br><br><br><br><br></h2>
 				</td>
 				<td>
 				<div id="div7"> 
@@ -165,12 +171,13 @@
 			</tr>
 			</table>
 		
+			<!-- js to make carousel interactive -->
 				<script>
 					var idx=1;
-					var len = 7;
+					var len = 7; 	// there's 7 test elements at the moment
 					display();
 
-					function pre(){
+					function pre(){ // display previous card
     					idx--;
 						if (idx === 0){
 							idx = 1;
@@ -178,7 +185,7 @@
 						display();
 					}
 
-					function next(){
+					function next(){ // display next card
     					idx++;
 						if (idx === 7){
 							idx = 6;
@@ -186,11 +193,11 @@
 						display();
 					}
 
-					function display(){
+					function display(){ // card display function
 						var div ;
     					for (var i = 1; i<= len; i++){
 							div = document.getElementById('div' + i);
-							if (i === idx || i=== (idx + 1)){
+							if (i === idx || i=== (idx + 1)){ // display two cards at a time
 								div.style.display = "";
 							} else {
 								div.style.display = "none";
@@ -206,11 +213,14 @@
 
 	<div class="bg2">
 		<div class="margin">
-			<table style="margin-left:10%">
+		
+			<!-- containing the text and images in a table -->
+			<table style="margin-left:10%; padding: 5%">
 				<tr>
 				<td>
 					<img src="images/woman.png" alt="girl at desktop" width="80%">
 				</td>
+				
 				<td style="padding: 5%">
 					<h3 style="color: white; font-size: 1.5vw">INITIATIVES</h3>
 					<h2 style="color: white; font-size: 3vw">Mentorship <br> Programs</h2>
@@ -225,20 +235,27 @@
 					<h2 style="color: white; font-size: 3vw">Blog and Podcast</h2>
 					<h4 style="color: white; font-size: 1vw">Hear and read the thoughts of powerful <br>women in tech! Join us as we delve <br>into their stories and insights.</h4>
 					<a class="learnmorebutton"  href="javascript:void(0)"><p>Learn more</p></a>
+					
 				</td>
 				<td>
 					<img src="images/trailblazehers.png" alt="trailblaze-hers" width="60%">
 				</td>
 				</tr>	
 			</table>
+			
 		</div>
 		
-		<div class="containerbanner">
-  			<img src="images/shehacks.svg" alt="Snow" style="width:100%">
- 			<button class="btn">Learn More</button>
-		</div>
 	</div>
 	
+	<!-- she hacks banner -->
+	<div class="containerbanner">
+  		<img src="images/shehacks.svg" alt="Snow" style="width:100%">
+  		<br><br>
+  		<a href="https://shehacks.ca/" class="btn" style="text-decoration: none;"><p>Learn More</p></a>
+ 			
+	</div>
+	
+	<!-- community members carousel, it's cards for now bc there's only 2 people, we can make it into a carousel like above as we get more people -->
 	<div class="margin">
 		<h3>COMMUNITY</h3>
 		<table >
@@ -254,8 +271,9 @@
     				<img src="images/jenny.png" style="width: 30%"></img>
     				<h4 style="font-size:1vw; font-weight: bold; line-height: 100%">HBA & Software Engineering</h4> 
     				<h4 style="font-size:1vw; line-height: 100%">Year 4</h4> 
-    				<h4 style="font-size:1vw; font-family: avenir">Super interested in all things tech, especially the beautiful interfaces and well crafted user experiences of the products I use in my everyday life!</h4>
- 					<a class="cardbutton" href="javascript:void(0)">See Website</a>
+    				<h4 style="font-size: 0.9vw; font-family: avenir">Super interested in all things tech, especially the beautiful interfaces and well crafted user experiences of the products I use in my everyday life!</h4>
+ 					<a class="cardbutton" target="_blank" href="https://lijennifer.me/">See Website</a>
+ 					<br><br>
   				</div>
 			</div> 
 		
@@ -267,8 +285,9 @@
     				<img src="images/janki.png" style="width: 30%"></img>
     				<h4 style="font-size:1vw; font-weight: bold; line-height: 100%">Computer Science</h4> 
     				<h4 style="font-size:1vw; line-height: 100%">Year 3</h4> 
- 					<h4 style="font-size:1vw; font-family: avenir">My curiosity makes me thrive. As it leads me to explore new technologies, read up research papers, and take up leadership roles.</h4>
- 					<a class="cardbutton" href="javascript:void(0)">See Website</a>
+ 					<h4 style="font-size:0.9vw; font-family: avenir">My curiosity makes me thrive. As it leads me to explore new technologies, read up research papers, and take up leadership roles.</h4>
+ 					<a class="cardbutton" target="_blank" href="https://jankichaudhari226.github.io/">See Website</a>
+ 					<br><br>
   				</div>
 			</div> 
 		</td>
@@ -279,17 +298,17 @@
 	</div>
 	</div>
 
-
+	<!-- footer -->
 	<div class="margin">
 		<div class="marginTop10" style="margin-bottom: 10%">
 			<h4 style="font-family:helvetica; font-size: 1vw">Women in Technology Society</h4>
 			<h4 style="font-family:helvetica; font-size: 1vw">1151 Richmond St, London, ON N6A 3K7</h4>
 			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">wits.uwo@gmail.com</h4>
-			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">Made with &#10084;&#65039; in London, ON </h4>
+			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">Made with &#10084;&#65039; in London, ON <span style="float:right; font-weight:normal"> Social Media </span></h4>
 
-			<div style="float:right"><a href="http://www.instagram.com/wits.uwo/"><img src="images/i.png" alt="instagram" style="width: 100%"></a></div>
-			<div style="float:right"><a href="http://www.twitter.com/wits.uwo/"><img src="images/t.png" alt="twitter" style="width: 100%"></a></div>
-			<div style="float:right"><a href="http://www.facebook.com/wits.uwo/"><img src="images/f.png" alt="facebook" style="width: 100%"></a></div>
+			<div style="float:right"><a href="http://www.instagram.com/wits.uwo/"><img src="images/i.png" alt="instagram" style="width: 100%" id="footerimg"></a></div>
+			<div style="float:right"><a href="http://www.twitter.com/wits.uwo/"><img src="images/t.png" alt="twitter" style="width: 100%" id="footerimg"></a></div>
+			<div style="float:right"><a href="http://www.facebook.com/wits.uwo/"><img src="images/f.png" alt="facebook" style="width: 100%" id="footerimg"></a></div>
 
 		</div>
 	</div>
