@@ -1,0 +1,360 @@
+body {
+	margin: 0;
+	display: grid;
+	height: 100%;
+}
+
+
+.card {
+  	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  	transition: 0.3s;
+  	width: 40%;
+  	float: right;
+}
+
+.card:hover {
+  	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  	padding: 2% 10%  5% 10%;
+  
+}
+
+.margin{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.responsive {
+	width: 100%;
+	height: auto;
+}
+
+.bg1{
+	margin:0px;
+	background-image: url('images/bg1.svg');
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+
+.bg2{
+
+	margin:0px;
+	padding:0px;
+	background-image: url('images/bg2.svg');
+	background-repeat: no-repeat;
+	background-size:contain;
+  
+}
+
+.containerbanner {
+	position: relative;
+	width: 100%;
+	margin:0px;
+}
+
+.containerbanner img {
+	width: 100%;
+	height: auto;
+}
+
+.containerbanner .btn {
+	position: absolute;
+	top: 70%;
+	left: 28%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: #27A6FE;
+	color: white;
+	font-size: 16px;
+	padding: 10px 40px;
+	border: none;
+	cursor: pointer;
+  	border-radius: 20px;
+	text-align: center;
+}
+
+i {
+	cursor: pointer;
+}
+
+.containerbanner .btn:hover {
+	background-color: #FFD400;
+}
+
+
+h1{
+	color: #0A2338;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 5vw;
+	line-height: 110%;
+}
+
+h2 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3vw;
+	line-height: 140%;
+	color: #402B2B;
+}
+
+h3{
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.5vw;
+	line-height: 40px;
+	color: #E57154;
+}
+
+h4 {
+	font-family: Avenir;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.5vw;
+	line-height: 160%;
+	color: #4B5D68;
+}
+
+h5 {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	color: #402B2B;
+}
+
+p {
+	font-family: Rubik;
+	font-size: 1vw;
+	font-weight: bold;
+}
+
+.topnav {
+	overflow: hidden;
+
+}
+
+.topnav a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 5px 50px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #4CAF50;
+	color: black;
+}
+
+.topnav-right {
+	float: right;
+}
+
+.navbutton {
+	background-color: #E57154;
+	border: none;
+	color: white;
+	font-style: normal;
+  	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+  	border-radius: 5px;
+}
+
+
+
+.navbutton {
+	background-color: #E57154;
+	border: none;
+	color: white;
+	font-style: normal;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.cardbutton {
+	background-color: #E68976;
+	border: none;
+	color: white;
+	font-style: normal;
+	padding: 10px 20px;
+	font-family: Rubik;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 1vw;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* align images side by side */
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+/* align images side by side - clearfix (clear floats) */
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+.column2 {
+	float: left;
+	width: 5%;
+	padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row2::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+
+/* make the top margin of each section 10% */
+.marginTop10{
+	margin-top: 10%;
+}
+
+/* make the top margin of each section 40% */
+.marginTop20{
+	margin-top: 200px;
+}
+
+
+/* landing page join us button */
+.landingbutton {
+	background-color: #E68976;
+	border: none;
+	color: white;
+	font-style: normal;
+	padding: 5%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+/* learn more button */
+.learnmorebutton {
+	background-color: white;
+	border: none;
+	color: #E68976;
+	font-style: normal;
+	padding: 10px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+.shehacksbutton {
+	background-color: #27A6FE;
+	border: none;
+	color: white;
+	font-style: normal;
+	padding: 10px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 50px;
+}	
+
+
+.slider{
+	max-width: 1000px;
+  	display: inline;
+}
+
+.slider .card{
+	flex: 1;
+	margin: 0 10px;
+	background: #fff;
+}
+
+.slider .card .img img{
+	width: 40%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.slider .card .content{
+	padding: 10px 20px;
+}
+.card .content .title{
+	font-size: 25px;
+	font-weight: 600;
+}
+.card .content .sub-title{
+	font-size: 20px;
+	font-weight: 600;
+	color: #e74c3c;
+	line-height: 20px;
+}
+.card .content p{
+	text-align: justify;
+	margin: 10px 0;
+}
+.card .content .btn{
+  	display: block;
+  	text-align: left;
+  	margin: 10px 0;
+}
+.card .content .btn button{
+
+  	color: #fff;
+  	border: none;
+  	outline: none;
+  	font-size: 17px;
+  	font-family: Avenir;
+  	padding: 5px 20px;
+  	background: #E68976;
+	border-radius: 50px;
+  	cursor: pointer;
+  	transition: 0.2s;
+}
+.card .content .btn button:hover{
+  	transform: scale(0.9);
+}
+.card {
+   box-shadow: 0 4px 8px 0 rgba(255,0,0,0.2);
+  	transition: 0.3s;
+  
+}
