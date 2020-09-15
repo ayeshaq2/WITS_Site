@@ -4,6 +4,74 @@ body {
 	height: 100%;
 }
 
+
+/* navbar */
+nav {
+    z-index: 3000;
+}
+
+.navbar .nav-item .nav-link {
+    font-family: "Rubik";
+    font-weight: 600;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar .nav-item .nav-link:hover{
+    color: #E57154;
+}
+
+.nav-link.active {
+    color: #E57154 !important;
+  }
+
+.navbar-brand img {
+    width: 70px;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #B3E2D4;
+    padding: .5rem 1rem;
+}
+
+.navbar .join-button{
+    background-color:  #E57154;
+    box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 25px;
+    display: inline-block;
+    font-family: "Rubik";
+    font-weight: 600;
+    color:  white;
+}
+
+.navbar button:hover{
+	background-color:  #0A2338;
+	transition: all 0.3s ease 0s;
+}
+
+.navbar ul{
+    justify-content: flex-end; 
+    font-weight: 600;
+    color: white;
+}
+
+.vertical-center{
+    display:flex;
+    align-items: center;
+}
+
+.horizontal-center{
+    text-align: center;
+}
+
+/*navbar*/
+
 * {
 	box-sizing: border-box;
 }
@@ -32,6 +100,36 @@ body {
 	height: auto;
 }
 
+.teal-background{
+	background-color: #B3E2D4;
+}
+
+
+@media (max-width:991px){
+	.reverse-col{
+	   flex-direction:column-reverse;
+	   padding:5%;
+   }
+}
+
+.headshot, img{
+	width: 100%;
+}
+
+.headshot{
+	border-radius: 100%;
+}
+
+.headshot:hover{
+	opacity: 0.5;
+	transition: all 0.3s ease 0s;	
+}
+
+.headshot-name{
+	font-family: "Roboto";
+	font-weight: 500;
+}
+
 /* images resting state */
 #hoverimg{
     width: 80%;
@@ -40,7 +138,9 @@ body {
 
 /* images when hover change opacity */
 #hoverimg:hover{
-    opacity: 0.5;
+	opacity: 0.5;
+	transition: all 0.3s ease 0s;	
+
 }
 
 /* padding of each cell */
@@ -64,7 +164,6 @@ h1{
 	font-family: Helvetica;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 4vw;
 	line-height: 110%;
 }
 
@@ -73,7 +172,6 @@ h2 {
 	font-family: Helvetica;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 2.5vw;
 	line-height: 140%;
 	color: #402B2B;
 }
@@ -83,7 +181,6 @@ h3{
 	font-family: Rubik;
 	font-style: normal;
 	font-weight: bold;
-	font-size: 1.3vw;
 	line-height: 40px;
 	color: #E57154;
 }
@@ -93,7 +190,6 @@ h4 {
 	font-family: Helvetica;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 1.2vw;
 	line-height: 160%;
 	color: #4B5D68;
 }
@@ -101,39 +197,8 @@ h4 {
 /* body font */
 p {
 	font-family: Rubik;
-	font-size: 1vw;
 	font-weight: bold;
 }
-
-/* navbar clip overflow */
-.topnav {
-  overflow: hidden;
- 
-}
-
-/* navbar link properties */
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 5px 50px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* navbar link properties on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-  border-radius:10px;
-}
-
-/* desktop view of mobile icon for navbar*/
-.topnav .icon {
-  display: none;
-}
-
 
 /* mobile view icon for navbar*/
 @media screen and (max-width: 600px) {

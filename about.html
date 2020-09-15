@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="about.css">
 	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
    
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -18,333 +19,270 @@
 
 </head>
 
-<body>
+<body  data-spy="scroll" data-target=".navbar" data-offset="50">
 
-
-	<div class="aboutbg">
-		<div class="margin">
-			<div class="topnav" id="myTopnav" style="padding: 5px">
-  				<a style="padding: 10px 2px;" href="index.html"><img src="images/wits.png" alt="wits logo"></a>
-  				<a href="membership.html"style="float:right; background:#E57154; border-radius: 10px; color: white"><p>JOIN US</p></a>
-  				<a href="about.html"style="float:right"><p>ABOUT US</p></a>
-  				<a href="partners.html"style="float:right"><p>PARTNER</p></a>
-  				<a href="initiatives.html"style="float:right"><p>INITIATIVES</p></a>
-  				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+	<!--navbar start-->
+	<header>
+		<nav class="navbar navbar-light navbar-expand-md fixed-top">
+			<div class = "container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<a href="#landing" class="navbar-brand vertical-center" style="padding: 5px auto 2px auto;"><img src="images/wits.png" alt="she/hacks"></a>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="navbar-toggler-icon"></i>
+				</button>  
+	
+				<!-- collapse navbar -->
+				<div class="navbar-collapse collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto w-100 clearfix">
+						<li class="nav-item vertical-center"><a class="nav-link" href="initiatives.html">INITATIVES</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="partners.html">PARTNER</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="about.html">ABOUT US</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="membership.html"><button class="join-button">JOIN US</button></a></li>
+					</ul>
+				</div>
 			</div>
-			
-			<script>
-				function myFunction() {
-  					var x = document.getElementById("myTopnav");
-  					if (x.className === "topnav") {
-    					x.className += " responsive";
-  					} else {
-    					x.className = "topnav";
-  					}
-				}
-			</script>
+		</nav>
+	</header>
 
-			<div style="margin-top: 3%; margin-left:0%">
-
-				<table>
-					<tr>
-					<td style="width: 60%">
-						<h1>About Us<h1>
-						<h4 style="line-height:160%; color: #0A2338; font-size: 1.5vw;">The Women in Technology Society is a team of powerful women at the heart of 
+	<section class="teal-background" style="padding-top: 10%;">
+		<div class="container">
+			<div class="row reverse-col">
+				<div class="col-lg-6 m-auto">
+					<h1>About Us</h1>
+					<h4>
+						The Women in Technology Society is a team of powerful women at the heart of 
 						Western University. Meet the lovely individuals here to inspire 
 						change and join the WITS family today!
-						</h4>
-						
-					</td>
-					
-					<td style="width: 50%">
-						<img src="images/pipelines.png" alt="main pic" class="responsive" width="300px" height="300px">
-					</td>
-					</tr>
-				</table>
+					</h4>
+				</div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-5 py-5">
+					<img src="images/pipelines.png" alt="main pic">
+				</div>
 			</div>
 		</div>
-		
-		<div class="margin">
-			<div style="margin-top:35%">
-				
-				
-				<h2 style="font-size: 2vw; text-align: center"> Meet the WITS family </h2>
-				<h4 style="font-size: 1.5vw; color: black; text-align: center"> The faces behind the change </h2>
-				<br><br>
-					<table style="margin-left: auto; margin-right: auto;">
-				
-					<tr>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">Meghan Lo </h4>
-					<h4 style="text-align: center; font-size: 1vw"> President </h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Leslie Wu </h4>
-					<h4 style="text-align: center; font-size: 1vw"> President </h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Elaine Liu </h4>
-					<h4 style="text-align: center; font-size: 1vw"> Chair of Shehacks </h4>
-			
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Jessie Wu </h4>
-					<h4 style="text-align: center; font-size: 1vw"> VP Operations </h4>
-					
-					</td>
-					</tr>
-					
-					
-					<tr>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">Kisharne Vasikaran</h4>
-					<h4 style="text-align: center; font-size: 1vw"> VP Events</h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">  Tara Rafi </h4>
-					<h4 style="text-align: center; font-size: 1vw; line-height: 170%"> VP Events </h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Selina Yang  </h4>
-					<h4 style="text-align: center; font-size: 1vw"> VP Mentorship </h4>
-			
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Sammi Yeung </h4>
-					<h4 style="text-align: center; font-size: 1vw"> VP Mentorship </h4>
-					
-					</td>
-					</tr>
-					
-				
-					<tr>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Estelle Chung </h4>
-					<h4 style="text-align: center; font-size: 1vw"> VP Design </h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Shirley Wu </h4>
-					<h4 style="text-align: center; font-size: 1vw"> Designer </h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Jenny Cai </h4>
-					<h4 style="text-align: center; font-size: 1vw"> Designer </h4>
-			
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Jessica Le </h4>
-					<h4 style="text-align: center; font-size: 1vw"> Designer </h4>
-					
-					</td>
-					</tr>
-					
-					<tr>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">Abby Lui </h4>
-					<h4 style="text-align: center; font-size: 1vw"> Designer</h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Alice Wang </h4>
-					<h4 style="text-align: center; font-size: 1vw"> VP Development</h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Laura Popa</h4>
-					<h4 style="text-align: center; font-size: 1vw"> Developer </h4>
-			
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">Tito Adebajo</h4>
-					<h4 style="text-align: center; font-size: 1vw"> VP Finance</h4>
-					
-					</td>
-					</tr>
-					
-					
-					<tr>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Samantha McDougall </h4>
-					<h4 style="text-align: center;font-size: 1.1vw;  line-height: 170%"> Social Media</h4>
-					
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Kimberley Lu  </h4>
-					<h4 style="text-align: center;font-size: 1.1vw;  line-height: 170%"> VP Marketing </h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">  Janice Xu </h4>
-					<h4 style="text-align: center;font-size: 1.1vw;  line-height: 170%">Content </h4>
-			
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Jun Huang  </h4>
-					<h4 style="text-align: center;font-size: 1.1vw;  line-height: 170%"> Content </h4>
-					
-					</td>
-					</tr>
-					
-					<tr>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">Alex Radova </h4>
-					<h4 style="text-align: center; font-size: 1vw"> VP Sponsorship</h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">Judith Chen </h4>
-					<h4 style="text-align: center; font-size: 1vw"> VP Sponsorship</h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Amaal Shaikh</h4>
-					<h4 style="text-align: center; font-size: 1vw"> Sponsorship </h4>
-			
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">Jinha Kim</h4>
-					<h4 style="text-align: center; font-size: 1vw"> Sponsorship</h4>
-					
-					</td>
-					</tr>
-					
-					<tr>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">Connie Chen </h4>
-					<h4 style="text-align: center; font-size: 1vw"> Sponsorship</h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Name </h4>
-					<h4 style="text-align: center; font-size: 1vw"> Tite</h4>
-					
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold"> Name </h4>
-					<h4 style="text-align: center; font-size: 1vw"> Tite</h4>
-					</td>
-					<td style="text-align: center">
-					<a style="padding: 10px 2px;" href="#"><img src="images/circle.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-					<h4 style="text-align: center;font-size: 1.1vw; line-height: 170%; font-weight: bold">Name </h4>
-					<h4 style="text-align: center; font-size: 1vw"> Tite</h4>
-					</td>
-					</tr>
-					</table>
+	</section>
+	<img src="images/about-us-wave.svg" class="w-100 mb-5">
+
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="horizontal-center w-100 p-4">
+					<h2>Meet the WITS Family</h2>
+					<h4>The faces behind the change</h4>
 				</div>
-			
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="http://elaineliu.tech" target="_blank"><img src="images/wits-members/leslie.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Leslie Wu </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Co-President of WITS </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="http://elaineliu.tech" target="_blank"><img src="images/wits-members/meghan.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Meghan Lo </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Co-President of WITS </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="http://elaineliu.tech" target="_blank"><img src="images/wits-members/elaine.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Elaine Liu </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Chair of Shehacks </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/jessie-wu-612ba5169/" target="_blank"><img src="images/wits-members/jessie.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Jessie Wu </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Operations </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/kisharne-v-53344414b" target="_blank"><img src="images/wits-members/kisharne.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Kisharne Vasikaran </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Events & Educationals </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/tara-rafi/" target="_blank"><img src="images/wits-members/tara.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Tara Rafi </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Events & Educationals </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/selina-ruiqi-yang1999/" target="_blank"><img src="images/wits-members/selina.jpg" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Selina Yang </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Mentorship & Projects </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/sammiyeung/" target="_blank"><img src="images/wits-members/sammi.jpg" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Sammi Yeung </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Mentorship & Projects </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://estellechung.com/design.html" target="_blank"><img src="images/wits-members/estelle.png" alt="Estelle Chung" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Estelle Chung </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Design </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="shirleywu.work" target="_blank"><img src="images/wits-members/shirley.png" alt="Shirley Wu" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Shirley Wu </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Director of Design </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/jessicajxle/" target="_blank"><img src="images/wits-members/jessica.jpg" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Jessica Le </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Director of Design </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/abby-lui-70383a1a6/" target="_blank"><img src="images/wits-members/abby.jpg" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Abby Lui </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Director of Design </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/jenny-cai-3337b8162/" target="_blank"><img src="images/wits-members/jenny.jpg" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Jenny Cai </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Director of Design </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/alicewang222
+					" target="_blank"><img src="images/wits-members/alice.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Alice Wang </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Development </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/alexandraradova" target="_blank"><img src="images/wits-members/alex.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Alex Radova </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Sponsorship </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/judithchen/" target="_blank"><img src="images/wits-members/judith.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Judith Chen </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Sponsorship </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/amaal-shaikh-b2b1621a5/" target="_blank"><img src="images/wits-members/amaal.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Amaal Shaikh </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Director of Sponsorship </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/conniechen827/" target="_blank"><img src="images/wits-members/connie.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Connie Chen </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Director of Sponsorship </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/jinhakim1999/" target="_blank"><img src="images/wits-members/jin.jpg" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Jinha Kim </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Director of Sponsorship </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/titomi-adebajo/" target="_blank"><img src="images/wits-members/tito.png" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Tito Adebajo </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Finance </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://kimlu.myportfolio.com/" target="_blank"><img src="images/wits-members/kim.png" alt="Kim Lu" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Kimberley Lu </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Marketing </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="www.linkedin.com/in/samanthamcdougall" target="_blank"><img src="images/wits-members/sam.png" alt="Sam McDougall" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Samantha McDougall </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Director of Marketing </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/junhuangg/" target="_blank"><img src="images/wits-members/jun.jpg" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Jun Huang </h5>
+					<h4 style="text-align: center; font-size: 1rem"> VP of Marketing </h4>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6 col-6 p-4">
+					<a href="https://www.linkedin.com/in/janicexu16/" target="_blank"><img src="images/wits-members/janice.jpg" alt="WITS Member" class="headshot"></a>
+					<h5 class="horizontal-center headshot-name mt-4"> Janice Xu </h5>
+					<h4 style="text-align: center; font-size: 1rem"> Director of Marketing </h4>
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
+
+	<section style="background: #F1EFE2; padding: 7% 0;">
+		<div class="container">
+			<div class="row">
+				<div class="horizontal-center w-100 p-4 m-auto">
+					<h2>Where Our Team Is</h2>
+				</div>				
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://careers.google.com/jobs/" target="_blank">
+						<img id="hoverimg" src="images/googlelogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://www.mckinsey.com/careers/search-jobs" target="_blank">
+						<img id="hoverimg" src="images/mclogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://stripe.com/en-ca/jobs" target="_blank">
+						<img id="hoverimg" src="images/stripelogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://www.goldmansachs.com/careers/" target="_blank">
+						<img id="hoverimg" src="images/gslogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://careers.microsoft.com/" target="_blank">
+						<img id="hoverimg" src="images/microsoftlogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://stripe.com/en-ca/jobs" target="_blank">
+						<img id="hoverimg" src="images/shopifylogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://www.shopify.ca/careers" target="_blank">
+						<img id="hoverimg" src="images/dslogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://www.cloudflare.com/careers/" target="_blank">
+						<img id="hoverimg" src="images/cloudfare.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://jobs.rbc.com/ca/en" target="_blank">
+						<img id="hoverimg" src="images/rbclogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://jobs.td.com/en-CA/" target="_blank">
+						<img id="hoverimg" src="images/tdlogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://www.cppinvestments.com/careers" target="_blank">
+						<img id="hoverimg" src="images/cpplogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://www.cisco.com/c/en/us/about/careers.html" target="_blank">
+						<img id="hoverimg" src="images/ciscologo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://www.avanade.com/en-ca/careers" target="_blank">
+						<img id="hoverimg" src="images/avanadelogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://www.cibc.com/en/about-cibc/careers.html" target="_blank">
+						<img id="hoverimg" src="images/cibclogo.png" alt="admin">
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-4 col-4 p-4 m-auto">
+					<a href="https://jobs.bce.ca/" target="_blank">
+						<img id="hoverimg" src="images/belllogo.png" alt="admin">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 	
-	<div style="background: #F1EFE2;">
-	<div class="margin">
-		<div class="marginTop10">
-			
-			<br><br>
-			<div class="marginCenter">
-			<h2 style="font-size: 2vw; text-align: center"> Where Our Team Is</h2>
-			<br><br><br>
-			
-					
-						<table>
-							<tr>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/googlelogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/mclogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/stripelogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-					
-							</tr>
-							<tr>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/gslogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/microsoftlogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/shopifylogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/dslogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/cloudfare.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/rbclogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-					
-							</tr>
-							<tr>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/tdlogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/cpplogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/ciscologo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-							</tr>
-							<tr>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/avanadelogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/cibclogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-								<td>
-								<a style="padding: 10px 2px;" href="#"><img id="hoverimg" src="images/belllogo.png" alt="admin" class="responsive2" width="300px" height="200px"></a>
-								</td>
-							</tr>
-					</table>
-				
-			
-			<br><br><br><br>
-		</div>
-		</div>
-	</div>
-	</div>
+
 	<div class="margin">
 		<div class="marginTop10" style="margin-bottom: 10%">
 			<h4 style="font-family:helvetica; font-size: 1vw">Women in Technology Society</h4>
