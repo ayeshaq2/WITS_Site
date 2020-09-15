@@ -276,12 +276,15 @@ img {
 	transition: 0.3s;
 	background: white;
 	border-radius: 10px;
-	width: 100%;
-	height: 500px;
+	height: 100%;
 	padding: 15%;
+	margin: 2%;
 	overflow: hidden;
 }
 
+section{
+	padding: 4rem 0;
+}
 
 /* social media links */
 #footerimg {
