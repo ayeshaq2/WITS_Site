@@ -16,55 +16,60 @@
    
 </head>
 
-<body>
-	<div class="initbg">
-		<div class="margin">
-		<!-- responsive navbar -->
-			<div class="topnav" id="myTopnav" style="padding: 5px">
-  				<a style="padding: 10px 2px;" href="index.html"><img src="images/wits.png" alt="wits logo"></a>
-  				<a href="membership.html"style="float:right; background:#E57154; border-radius: 10px; color: white"><p>JOIN US</p></a>
-  				<a href="about.html"style="float:right"><p>ABOUT US</p></a>
-  				<a href="partners.html"style="float:right"><p>PARTNER</p></a>
-  				<a href="initiatives.html"style="float:right"><p>INITIATIVES</p></a>
-  				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-			</div>
-			
-		<!-- js to make navbar responsive -->
-			<script>
-				function myFunction() {
-  					var x = document.getElementById("myTopnav");
-  					if (x.className === "topnav") {
-    					x.className += " responsive";
-  					} else {
-    					x.className = "topnav";
-  					}
-				}
-			</script>
-
-			<div class="marginTop10">
-			
-			<!-- contain main text and image into a banner-->
-				<table>
-					<tr>
-					<td style="width: 50%">
-						<h1>Initiatives<h1>
-						<h4 style="color: #0A2338;">WITS delivers a series of initiatives designed to inspire and equip.
-						We provide our community with access to informative panels, educationals, workshops, inspirational speakers, and SheHacks, one of Canada’s largest all-female hackathons.</h4>
+<body data-spy="scroll" data-target=".navbar" data-offset="50"> 
+	<header>
+		<nav class="navbar navbar-light navbar-expand-md fixed-top">
+			<div class = "container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<a href="index.html" class="navbar-brand vertical-center" style="padding: 5px auto 2px auto;"><img src="images/wits.png" alt="she/hacks"></a>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="navbar-toggler-icon"></i>
+				</button>  
+				
+				<!-- collapse navbar -->
+				<div class="navbar-collapse collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto w-100 clearfix">
 						
-					</td>
-					<td style="width: 50%">
-						<img src="images/computer.png" alt="main pic" class="responsive" width="300px" height="300px">
-					</td>
-					</tr>
-				</table>
+						<li class="nav-item vertical-center"><a class="nav-link" href="initiatives.html">INITIATIVES</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="partners.html">PARTNERS</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="about.html">ABOUT US</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="membership.html"><button class="join-button">JOIN US</button></a></li>
+					</ul>
+				</div>
 			</div>
-			
-			<div class="marginTop30">
-		
+		</nav>
+	</header>
+	<section style="background: #F2D0C8" style="padding-top: 10%;">
+		<div class="container">
+			<div class="row reverse-col">
+				<div class="col-lg-6 m-auto">
+					
+					<h1 style="margin-top: 20%">Initiatives</h1>
+					<br>
+					<h5 style="line-height:160%; font-family:helvetica; color: #4B5D68;">
+						WITS delivers a series of initiatives designed to inspire and equip.
+						We provide our community with access to informative panels, educationals, workshops, inspirational speakers, and SheHacks, one of Canada’s largest all-female hackathons.</h4>
+					</h5>
+				</div>
+				<div class="col-lg-1"></div>
+					<div class="col-lg-5 py-5" style="margin-top: 20%">
+					<img src="images/computer.png" class="mobileimg" alt="main pic">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<img src="images/initiatives-wave.svg" class="w-100 mb-5">
+	
+	
+	<div class="container">
+		<div class="row">
+			<div class="col m-auto">
+			<div style="margin-top:5%; margin-left: 20%">
 				<a href="events.html" style="text-decoration: none" class="containerRectangle">
-  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
+  					<div class="colum" style="margin-left: 5%; margin-top: 5%">
     					<div>
-      						<h2>Events & Educationals</h2>
+      						<h2 style="font-size:2vw">Events & Educationals</h2>
     					</div>
     					
     					<div>
@@ -74,35 +79,42 @@
   					<div class="image">
     					<img src="images/events.png" style="width: 100%">
   					</div>
-
+					
 				</a>
+				
 			</div>
-			
-			<div style="margin-top:5%">
-		
-				<a href="ada.html" style="text-decoration: none" class="containerRectangle">
-  					<div class="colum" style="margin-left: 5%; margin-top 2%">
+			</div>
+		</div>
+		<div class="row">
+		<div class="col m-auto">
+			<div style="margin-top:5%; margin-left: 20%">
+			<a href="events.html" style="text-decoration: none" class="containerRectangle">
+  					<div class="colum" style="margin-left: 5%; margin-top: 5%">
     					<div>
-      						<h2>Mentorship Programs</h2>
+      						<h2 style="font-size:2vw">Mentorship Programs</h2>
     					</div>
     					
     					<div>
-      						<h4 style="font-size: 1vw">Connecting young women who want to expand their knowledge in the tech world with upper-years who have that experience and knowledge in a year-long project development program.</h4>
+      						<h4 style="font-size: 0.98vw">Connecting young women who want to expand their knowledge <br>in the tech world with upper-years who have that experience and knowledge in a year-long project development program.</h4>
     					</div>
   					</div>
   					<div class="image">
     					<img src="images/mentorship.png" style="width: 100%">
   					</div>
+  					
 
 				</a>
 			</div>
-			
-			<div style="margin-top:5%">
-		
-				<a href="blog.html" style="text-decoration: none" class="containerRectangle">
-  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
-    					<div>
-      						<h2>Blog & Podcast</h2>
+			</div>
+		</div>
+		<div class="row">
+		<div class="col m-auto">
+			<div style="margin-top:5%; margin-left: 20%">
+			<a href="events.html" style="text-decoration: none" class="containerRectangle">
+  					<div class="colum" style="margin-left: 5%; margin-top: 5%">
+    						
+      						<div>
+      						<h2 style="font-size:2vw">Blog & Podcast</h2>
     					</div>
     					
     					<div>
@@ -112,170 +124,168 @@
   					<div class="image">
     					<img src="images/blog.png" style="width: 100%">
   					</div>
-
+					
 				</a>
 			</div>
-		
+			</div>
 		</div>
-	</div>
-	
-	<div class="initbg2">
-	
-		<div class="margin" style="margin-top: 25%">
-			<h2>Upcoming <br> Events </h2>
-			
-			<div class="marginTop10">
-		
-				<a href="events.html" style="text-decoration: none" class="containerRectangle">
-  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
-    					<div>
-      						<h2 style="line-height:80%">Event 1</h2>
-    					</div>
-    					
-      					<div class="rectangle" style="background: #C4C4C4; margin-left:2.5%"></div>
-    					
-    					<div>
-      						<h4 style="font-size:1.2vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
-      						<br><br>
-    					</div>
-  					</div>
-  					<div class="image">
-    					<img src="images/gray.png" style="width: 100%">
-  					</div>
-
-				</a>
-			</div>
-			
-			<div style="margin-top:5%">
-		
-				<a href="events.html" style="text-decoration: none" class="containerRectangle">
-  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
-    					<div>
-      						<h2 style="line-height:80%">Event 1</h2>
-    					</div>
-    					
-      					<div class="rectangle" style="background: #E68976; margin-left:2.5%"></div>
-    					
-    					<div>
-      						<h4 style="font-size:1.2vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
-      						<br><br>
-    					</div>
-  					</div>
-  					<div class="image">
-    					<img src="images/gray.png" style="width: 100%">
-  					</div>
-
-				</a>
-			</div>
-			
-			<div style="margin-top:5%">
-		
-				<a href="events.html" style="text-decoration: none" class="containerRectangle">
-  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
-    					<div>
-      						<h2 style="line-height:80%">Event 1</h2>
-    					</div>
-    					
-      					<div class="rectangle" style="background: #F4D089; margin-left:2.5%"></div>
-    					
-    					<div>
-      						<h4 style="font-size:1.2vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
-      						<br><br>
-    					</div>
-  					</div>
-  					<div class="image">
-    					<img src="images/gray.png" style="width: 100%">
-  					</div>
-
-				</a>
-			</div>
-			
-			<div style="margin-top:5%">
-				
-				
-				<!-- the images will be replaced -->
-				<a href="events.html" style="text-decoration: none" class="containerRectangle">
-  					<div class="colum" style="margin-left: 5%; margin-top: 2%">
-    					<div>
-      						<h2 style="line-height:80%">Event 1</h2>
-    					</div>
-    					
-      					<div class="rectangle" style="background: #F4D089; margin-left:2.5%"></div>
-    					
-    					<div>
-      						<h4 style="font-size:1.2vw; font weight: bold">Jan. 1, 2020 at 5:30pm EST </h4>
-      						<br><br>
-    					</div>
-  					</div>
-  					<div class="image">
-    					<img src="images/gray.png" style="width: 100%">
-  					</div>
-				</a>
-			</div>
-			
-			<div style="margin-top:5%">
-				<h3>A LOOK BACK</h3>
-				<h2>Past Events </h2>
-			</div>
-			<div class="cardContainer">
-			<!-- the images will be replaced -->
-				<div class="card" style="background-color:white;">
-					<img src="images/gray.png" alt="Avatar" style="width:100%">
-					<h2 style="font-size:1.5vw; margin-left: 10%">Event </h2>
-					<div class="rectangle" style="margin-left:10%"></div>
-					<h4 style="font-size:1vw; margin-left: 10%">Event description</h4>
-				</div>
-
-				<div class="card" style="background-color:white;">
-					<img src="images/gray.png" alt="Avatar" style="width:100%">
-					<h2 style="font-size:1.5vw; margin-left: 10%">Event </h2>
-					<div class="rectangle" style="margin-left:10%"></div>
-					<h4 style="font-size:1vw; margin-left: 10%">Event description</h4>
-				</div>
-				<div class="card" style="background-color:white;">
-					<img src="images/gray.png" alt="Avatar" style="width:100%">
-					<h2 style="font-size:1.5vw; margin-left: 10%">Event </h2>
-					<div class="rectangle" style="margin-left:10%"></div>
-					<h4 style="font-size:1vw; margin-left: 10%">Event description</h4>
-				</div>
-				<div class="card" style="background-color:white;">
-					<img src="images/gray.png" alt="Avatar" style="width:100%">
-					<h2 style="font-size:1.5vw; margin-left: 10%">Event </h2>
-					<div class="rectangle" style="margin-left:10%"></div>
-					<h4 style="font-size:1vw; margin-left: 10%">Event description</h4>
-				</div>
-			</div>
-			
-			
-		</div>
-			
-			
-			
-		</div>
-		
-		
-		
-		
-		
-		
-			
 	
 	</div>
 	
-	<div class="margin">
-		<div class="marginTop10" style="margin-bottom: 10%">
-			<h4 style="font-family:helvetica; font-size: 1vw">Women in Technology Society</h4>
-			<h4 style="font-family:helvetica; font-size: 1vw">1151 Richmond St, London, ON N6A 3K7</h4>
-			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">wits.uwo@gmail.com</h4>
-			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">Made with &#10084;&#65039; in London, ON <span style="float:right; font-weight:normal"> Social Media </span></h4>
+	
+	<img src="images/init-wave-1.svg" class="w-100">
+	<div style="background: #F1EFE2">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h2 >Past Events</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col m-auto">
+					<div style="margin-top:5%; margin-left: 20%">
+						<a href="events.html" style="text-decoration: none" class="containerRectangle">
+  						<div class="colum" style="margin-left: 5%; margin-top: 5%">
+    					
+      							<h2 style="font-size:2vw">Event</h2>
+    						
+    						<div class="rectangle" style="background: #C4C4C4;"></div>
+    						
+      							<h4 style="font-size:1.4vw; margin-top: 2%">January 1st, 2020 at 5:30PM EST </h4>
+    						
+  						</div>
+  						<div class="image">
+    						<img src="images/events.png" style="width: 100%">
+  						</div>
+					
+						</a>
+				
+				</div>
+			</div>
+		
+				
+			</div>
+			<div class="row">
+				<div class="col m-auto">
+					<div style="margin-top:5%; margin-left: 20%">
+						<a href="events.html" style="text-decoration: none" class="containerRectangle">
+  						<div class="colum" style="margin-left: 5%; margin-top: 5%">
+    					
+      							<h2 style="font-size:2vw">Event</h2>
+    						
+    						<div class="rectangle" style="background: #C4C4C4;"></div>
+    						
+      							<h4 style="font-size:1.4vw; margin-top: 2%">January 1st, 2020 at 5:30PM EST </h4>
+    						
+  						</div>
+  						<div class="image">
+    						<img src="images/events.png" style="width: 100%">
+  						</div>
+					
+						</a>
+				
+				</div>
+			</div>
+		</div>
+			<div class="row">
+			<div class="col m-auto">
+			<div style="margin-top:5%; margin-left: 20%">
+				<a href="events.html" style="text-decoration: none" class="containerRectangle">
+  						<div class="colum" style="margin-left: 5%; margin-top: 5%">
+    					
+      							<h2 style="font-size:2vw">Event</h2>
+    						
+    						<div class="rectangle" style="background: #C4C4C4;"></div>
+    						
+      							<h4 style="font-size:1.4vw; margin-top: 2%">January 1st, 2020 at 5:30PM EST </h4>
+    						
+  						</div>
+  						<div class="image">
+    						<img src="images/events.png" style="width: 100%">
+  						</div>
+					
+						</a>
+				
+			</div>
+			</div>
+		</div>
+		
+		</div>
+	</div>
+	</div>
+	<img src="images/init-wave-2.svg" class="w-100">
+	
+		
+		<div class="marginTop10">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h3 >A LOOK BACK</h3>
+						<h2 >Past Events</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="cardContainer">
+						<!-- the images will be replaced -->
+							<div class="card" style="background-color:white;">
+								<img src="images/gray.png" alt="Avatar" style="width:100%">
+								<br>
+								<h2 style="font-size:1.5vw; margin-left: 10%">Event </h2>
+								<div class="rectangle" style="margin-left:10%"></div>
+								<h4 style="font-size:1vw; margin-left: 10%">Event description</h4>
+							</div>
 
-			<div style="float:right"><a href="http://www.instagram.com/wits.uwo/"><img src="images/i.png" alt="instagram" style="width: 100%" id="footerimg"></a></div>
+							<div class="card" style="background-color:white;">
+								<img src="images/gray.png" alt="Avatar" style="width:100%">
+								<br>
+								<h2 style="font-size:1.5vw; margin-left: 10%">Event </h2>
+								<div class="rectangle" style="margin-left:10%"></div>
+								<h4 style="font-size:1vw; margin-left: 10%">Event description</h4>
+							</div>
+							<div class="card" style="background-color:white;">
+								<img src="images/gray.png" alt="Avatar" style="width:100%">
+								<br>
+								<h2 style="font-size:1.5vw; margin-left: 10%">Event </h2>
+								<div class="rectangle" style="margin-left:10%"></div>
+								<h4 style="font-size:1vw; margin-left: 10%">Event description</h4>
+							</div>
+							<div class="card" style="background-color:white;">
+								<img src="images/gray.png" alt="Avatar" style="width:100%">
+								<br>
+								<h2 style="font-size:1.5vw; margin-left: 10%">Event </h2>
+								<div class="rectangle" style="margin-left:10%"></div>
+								<h4 style="font-size:1vw; margin-left: 10%">Event description</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	<div class="marginTop10">
+		<div class="container">
+  			<div class="row">
+  				<div class="col">
+  					<h6 style="font-family:helvetica; color:black">Women in Technology Society</h6>
+					<h6 style="font-family:helvetica;color:black">1151 Richmond St, London, ON N6A 3K7</h6>
+					<h6 style="font-family:helvetica; font-weight: bold;color:black">wits.uwo@gmail.com</h6>
+					<h6 style="font-family:helvetica; font-weight: bold; color:black">Made with &#10084;&#65039;in London, ON</h6>
+					<br>
+					<h6 style="font-family:helvetica; float:right; color:black">Social Media</h6>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col">
+  					<br>
+  					<div style="float:right"><a href="http://www.instagram.com/wits.uwo/"><img src="images/i.png" alt="instagram" style="width: 100%" id="footerimg"></a></div>
 			<div style="float:right"><a href="http://www.twitter.com/wits.uwo/"><img src="images/t.png" alt="twitter" style="width: 100%" id="footerimg"></a></div>
 			<div style="float:right"><a href="http://www.facebook.com/wits.uwo/"><img src="images/f.png" alt="facebook" style="width: 100%" id="footerimg"></a></div>
 
-		</div>
+  				</div>
+  			</div>
+  		</div>
 	</div>
-
 
 
 

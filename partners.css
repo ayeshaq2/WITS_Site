@@ -5,16 +5,7 @@ body {
 	
 }
 
-/* card padding */
-.container {
-  	padding: 2% 10%  5% 10%;
-}
 
-/* overall margin */
-.margin{
-	padding-left: 15%;
-	padding-right: 15%;
-}
 
 /* card margins */
 .marginCard{
@@ -266,6 +257,8 @@ nav {
   	transition: 0.3s;
   	border-radius:10px;
 }
+
+
    
 /* card properties shadow hover*/
 .card:hover {
