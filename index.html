@@ -15,167 +15,315 @@
     
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-
-	<div class="bg1">
-		<div class="margin">
-		
-			<!-- responsive navbar -->
-		
-			<div class="topnav" id="myTopnav" style="padding: 5px">
-  				<a style="padding: 10px 2px;" href="index.html"><img src="images/wits.png" alt="wits logo"></a>
-  				<a href="membership.html"style="float:right; background:#E57154; border-radius: 10px; color: white"><p>JOIN US</p></a>
-  				<a href="about.html"style="float:right"><p>ABOUT US</p></a>
-  				<a href="partners.html"style="float:right"><p>PARTNER</p></a>
-  				<a href="initiatives.html"style="float:right"><p>INITIATIVES</p></a>
-  				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-			</div>
-			
-			<!-- js to make the navbar responsive -->
-			<script>
-				function myFunction() {
-  					var x = document.getElementById("myTopnav");
-  					if (x.className === "topnav") {
-    					x.className += " responsive";
-  					} else {
-    					x.className = "topnav";
-  					}
-				}
-			</script>
-
-			<div class="marginTop10">
-			
-				<!-- containing the main text and image in a table -->
-				<table>
-					<tr>
-					<td style="width: 50%">
-						<h1>Building a future <br>for women* <br>in tech<h1>
-						<h4>At Women In Technology Society, we’re here <br>to support you in your journey through the <br>tech world, join our community today!</h4>
-						<a class="landingbutton" style="color: white; font-family: Rubik; font-size: 1vw" href="javascript:void(0)">Join Our Community</a>
-					</td>
-					<td style="width: 50%">
-						<img src="images/mainpic.png" alt="main pic" class="responsive" width="300px" height="300px">
-					</td>
-					</tr>
-				</table>
-			</div>
-
-			<!-- 3 mission goals -->
-			<div style="margin-top: 30%">
-				<div class="row">
-  					<div class="column">
-    					<img src="images/empoweringwomen.png" alt="Snow" style="width:100%">
-  					</div>
-  					<div class="column">
-    					<img src="images/buildingnetworks.png" alt="Forest" style="width:100%">
-  					</div>
-  					<div class="column">
-    					<img src="images/creatingpipelines.png" alt="Mountains" style="width:100%">
-  					</div>
+	<header>
+		<nav class="navbar navbar-light navbar-expand-md fixed-top">
+			<div class = "container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<a href="index.html" class="navbar-brand vertical-center" style="padding: 5px auto 2px auto;"><img src="images/wits.png" alt="she/hacks"></a>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="navbar-toggler-icon"></i>
+				</button>  
+				
+				<!-- collapse navbar -->
+				<div class="navbar-collapse collapse" id="navbarCollapse">
+					<ul class="navbar-nav mr-auto w-100 clearfix">
+						<li class="nav-item vertical-center"><a class="nav-link" href="initiatives.html">INITIATIVES</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="partners.html">PARTNER</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="about.html">ABOUT US</a></li>
+						
+						<li class="nav-item vertical-center"><a class="nav-link" href="membership.html"><button class="join-button">JOIN US</button></a></li>
+					</ul>
 				</div>
 			</div>
-			
-		
-			
-			<div class="marginTop10">
-				
-				
-				<h3>EVENTS <div style="float:right">
-					<span onclick="pre()"><i class='fas fa-long-arrow-alt-left' style='font-size:2vw; color: #ED4D47'></i></span>   <span onclick="next()"><i class='fas fa-long-arrow-alt-right' style='font-size:2vw; color: #ED4D47'></i>  </span>
+		</nav>
+	</header>
+	
+	
+	
+	<section style="padding-top: 10%;background: #F1EFE2;">
+		<div class="container">
+			<div class="row reverse-col">
+				<div class="col-lg-6 m-auto">
+					<h1>Building a future <br>for women* <br>in tech</h1>
 					<br>
+					<h4 style="line-height: 160%">
+						At Women In Technology Society, we’re here
+						to support you in your journey through the
+						tech world, join our community today!
+					</h4>
+					<br>
+					<a class="landingbutton" style="color: white; font-family: Rubik; font-size: 1vw; text-decoration: none" href="membership.html">Join Our Community</a>
+				</div>
+				<div class="col-lg-1"></div>
+				<div class="col-lg-5 py-5">
+					<img class="mobileimg" src="images/mainpic.png" alt="main pic" width="80%">
+				</div>
+			</div>
+		</div>
+	</section>
+	<img src="images/main-wave.svg" class="w-100 mb-5">
+	
+	<div class="container">
+		<div class="row reverse-col">
+			<div class="col m-auto">
+				<br>
+				<img src="images/empoweringwomen.png" class="mobileimg" alt="Snow" style="width:100%">
+				<br>
+			</div>
+			<div class="col m-auto">
+				<br>
+				<img src="images/buildingnetworks.png" class="mobileimg" alt="Forest" style="width:100%">
+				<br>
+			</div>
+			<div class="col m-auto">
+				<br>
+				<img src="images/creatingpipelines.png" class="mobileimg" alt="Mountains" style="width:100%">
+				<br>
+			</div>
+		</div>
+	</div>
+	
+	<div class="marginTop10">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3>EVENTS</h3>
+				</div>
+				<div class="col">
+					<div style="float:right">
+						<span onclick="pre()"><i class='fas fa-long-arrow-alt-left' style='font-size:2vw; color: #ED4D47'></i></span>   <span onclick="next()"><i class='fas fa-long-arrow-alt-right' style='font-size:2vw; color: #ED4D47'></i>  </span>
+						<br>
 					</div>
-				</h3>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-lg-3 col-md-1">
+					
+					<h2>Upcoming <br>Events</h2>
+				</div>
 				
-				<!-- events carousel -->
-				<table>
-				<tr>
-				<td>
-					<h2>Upcoming <br>Events <br><br><br><br><br><br></h2>
-				</td>
-				<td>
-				<div id="div7"> 
-					<div class="card">
-  						<div class="container">
-    						<h3>INTRO TO GITHUB</h3> 
-    						<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
- 							<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
- 							<a class="cardbutton" href="javascript:void(0)">Learn More</a>
- 						</div>
+				<div class="col-lg-9 col-md-11">
+					
+					<br>
+					<div id="div7"> 
+						<div class="card">
+  							<div class="containercarousel">
+  								<br>
+    							<h3 style="font-size:1.5vw">INTRO TO GITHUB</h3> 
+    							<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
+ 								<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
+ 								<a class="cardbutton" style="text-decoration: none; color:white" href="javascript:void(0)">Learn More</a>
+ 								<br>
+  							</div>
+						</div>
+					</div>
+				
+					<div id="div6">
+						<div class="card">
+  							<div class="containercarousel">
+  								<br>
+    							<h3 style="font-size:1.5vw">INTRO TO GITHUB</h3> 
+    							<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
+ 								<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
+ 								<a class="cardbutton" style="text-decoration: none; color:white" href="javascript:void(0)">Learn More</a>
+ 								<br>
+  							</div>
+						</div>
+					</div>
+				
+				
+					<div id="div5"> 
+						<div class="card"> 
+  							<div class="containercarousel">
+  								<br>
+    							<h3 style="font-size:1.5vw">INTRO TO GITHUB</h3> 
+    							<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
+ 								<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
+ 								<a class="cardbutton" style="text-decoration: none; color:white" href="javascript:void(0)">Learn More</a>
+ 								<br>
+  							</div>
+						</div>
+					</div>
+				
+					<div id="div4"> 
+						<div class="card">  
+  							<div class="containercarousel">
+  								<br>
+    							<h3 style="font-size:1.5vw">INTRO TO GITHUB</h3> 
+    							<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
+ 								<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
+ 								<a class="cardbutton" style="text-decoration: none; color:white" href="javascript:void(0)">Learn More</a>
+ 								<br>
+  							</div>
+						</div> 
+					</div>
+				
+					<div id="div3"> 
+						<div class="card">  
+  							<div class="containercarousel">
+  								<br>
+    							<h3 style="font-size:1.5vw">INTRO TO GITHUB</h3> 
+    							<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
+ 								<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
+ 								<a class="cardbutton" style="text-decoration: none; color:white" href="javascript:void(0)">Learn More</a>
+ 								<br>
+  							</div>
+						</div> 
+					</div>
+				
+					<div id="div2"> 
+						<div class="card">
+  							<div class="containercarousel">
+  								<br>
+    							<h3 style="font-size:1.5vw">INTRO TO GITHUB</h3> 
+    							<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
+ 								<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
+ 								<a class="cardbutton" style="text-decoration: none; color:white" href="javascript:void(0)">Learn More</a>
+ 								<br>
+  							</div>
+						</div> 
+					</div>
+				
+					<div id="div1"> 
+						<div class="card"> 
+  							<div class="containercarousel">
+  								<br>
+    							<h3 style="font-size:1.5vw">INTRO TO GITHUB</h3> 
+    							<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
+ 								<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
+ 								<a class="cardbutton" style="text-decoration: none; color:white" href="javascript:void(0)">Learn More</a>
+ 								<br>
+  							</div>
+						</div> 
 					</div>
 				</div>
-				
-				<div id="div6">
-					<div class="card">
-  						<div class="container">
-    						<h3>RESUME HELP</h3> 
-    						<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
- 							<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
- 							<a class="cardbutton" href="javascript:void(0)">Learn More</a>
-  						</div>
-					</div>
+			</div>
+		</div>
+	</div>
+	
+	<img src="images/index-wave.svg" class="w-100">
+	<div style="background: #E68976;">
+		<div class="container">
+			<div class="row reverse-col">
+				<div class="col-5 m-auto" >
+					<img src="images/woman.png" class="d-none d-lg-block" width="90%">
 				</div>
-				
-				
-				<div id="div5"> 
-					<div class="card"> 
-  						<div class="container">
-    						<h3>SHEHACKS</h3> 
-    						<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
- 							<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
- 							<a class="cardbutton" href="javascript:void(0)">Learn More</a>
-  						</div>
-					</div>
+				<div class="col-2"></div>
+				<div class="col-5 m-auto" >
+					<h5 style="color: white">INITIATIVES</h5>
+					<h4 style="color: white; font-weight: bold ">Mentorship <br> Programs</h4>
+					<br>
+					<h6 style="color: white; line-height: 170%">Our ongoing Ada Mentorship and Hack with <br>
+					Heart programs will provide a strong network <br>of mentors to help you build a project and arm<br>
+					you with skills to excel in the industry.</h6>
+					<br>
+					<a class="initbutton" style="font-family: Rubik; text-decoration: none; color:  #E68976;" href="javascript:void(0)">Learn More</a>
+					<br>
 				</div>
-				
-				<div id="div4"> 
-					<div class="card">  
-  						<div class="container">
-    						<h3>COOKIES AND CODE</h3> 
-    						<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
- 							<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
- 							<a class="cardbutton" href="javascript:void(0)">Learn More</a>
-  						</div>
-					</div> 
+			</div>
+			<div class="row reverse-col">
+				<div class="col-5 m-auto" >
+					<br>
+					<h4 style="color: white; font-weight: bold">Blog and Podcast</h4>
+					<br>
+					<h6 style="color: white; line-height: 170%">Hear and read the thoughts of powerful women in tech! Join us as we delve into their stories and insights.</h6>
+					<br>
+					<a class="initbutton" style="font-family: Rubik; text-decoration: none; color: #E68976;" href="javascript:void(0)">Learn More</a>
 				</div>
-				
-				<div id="div3"> 
-					<div class="card">  
-  						<div class="container">
-    						<h3>TECH PANEL</h3> 
-    						<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
- 							<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
- 							<a class="cardbutton" href="javascript:void(0)">Learn More</a>
-  						</div>
-					</div> 
+				<div class="col-2"></div>
+				<div class="col-5 m-auto">
+					<img src="images/trailblazehers.png" class="d-none d-lg-block" width="70%">
 				</div>
-				
-				<div id="div2"> 
-					<div class="card">
-  						<div class="container">
-    						<h3>INTRO TO WEB DEV</h3> 
-    						<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
- 							<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
- 							<a class="cardbutton" href="javascript:void(0)">Learn More</a>
-  						</div>
-					</div> 
-				</div>
-				
-				<div id="div1"> 
-					<div class="card"> 
-  						<div class="container">
-    						<h3>WITS AGM</h3> 
-    						<h4 style="font-size:1vw">Yes, you will need to have the land owner sign the permit application as the Permittee, and you sign the permit as the Applicant or Agent for the Permittee.</h4> 
- 							<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">6:00PM - 7:00PM EST <br> November 13th, 2020</h4>
- 							<a class="cardbutton" href="javascript:void(0)">Learn More</a>
-  						</div>
-					</div> 
-				</div>
-			</td>
-			</tr>
-			</table>
+			</div>
+			<br><br><br>
 		
-			<!-- js to make carousel interactive -->
+		</div>
+	
+	</div>
+	
+	<div class="containerbanner">
+  		<a href="https://shehacks.ca/"><img src="images/shehacks.svg" style="width:100%"></a>
+  		<br><br>
+  		<a href="https://shehacks.ca/" class="btn d-none d-lg-block" style="text-decoration: none;"><p>Learn More</p></a>
+ 			
+	</div>
+	
+	<div class="marginTop10">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h3>EVENTS</h3>
+				</div>
+			
+			</div>
+			<div class="row ">
+				<div class="col-lg-3 col-md-1">
+					<h2>Upcoming <br>Events</h2>
+				</div>
+				
+				<div class="col-lg-9 col-md-11">
+					<div class="card">
+  						<div class="containercarousel">
+  							<br>
+  							<h3 style="font-size:1.5vw">JENNY LI</h3> 
+  							<img src="images/jenny.png" style="width: 30%"></img>
+  							<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">HBA & Software Engineering</h4>
+  							<h4 style="font-size:1vw; font-family: helvetica">Year 3</h4>
+    						<h4 style="font-size:1vw">Super interested in all things tech, especially the beautiful interfaces and well crafted user experiences of the products I use in my everyday life!</h4> 
+ 							
+ 							<a class="cardbutton" style="text-decoration: none; color:white" href="https://lijennifer.me/" target="_blank">See Website</a>
+    				
+ 						<br><br>
+  					</div>
+				</div> 
+
+				<div class="card"> 
+  					<div class="containercarousel">
+    					<br>
+  						<h3 style="font-size:1.5vw">JANKI CHAUDHARI</h3> 
+  						<img src="images/janki.png" style="width: 30%">
+  						<h4 style="font-size:1vw; font-weight: bold; font-family: helvetica">Computer Science</h4>
+  						<h4 style="font-size:1vw; font-family: helvetica">Year 3</h4>
+    					<h4 style="font-size:1vw">My curiosity makes me thrive. As it leads me to explore new technologies, <br>read up research papers, and take up leadership roles.</h4> 
+ 							
+ 						<a class="cardbutton" style="text-decoration: none; color:white" href="https://jankichaudhari226.github.io/" target="_blank">See Website</a>
+    				
+ 						<br><br>
+  					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+	
+	<div class="marginTop10">
+		
+			<div class="container">
+  				<div class="row">
+  					<div class="col">
+  						<h6 style="font-family:helvetica;">Women in Technology Society</h6>
+						<h6 style="font-family:helvetica;">1151 Richmond St, London, ON N6A 3K7</h6>
+						<h6 style="font-family:helvetica; font-weight: bold;">wits.uwo@gmail.com</h6>
+						<h6 style="font-family:helvetica; font-weight: bold; ">Made with &#10084;&#65039; in London, ON</h6>
+						<br>
+						<h6 style="font-family:helvetica; float:right">Social Media</h6>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col">
+  						<br>
+  						<div style="float:right"><a href="http://www.instagram.com/wits.uwo/"><img src="images/i.png" alt="instagram" style="width: 100%" id="footerimg"></a></div>
+						<div style="float:right"><a href="http://www.twitter.com/wits.uwo/"><img src="images/t.png" alt="twitter" style="width: 100%" id="footerimg"></a></div>
+						<div style="float:right"><a href="http://www.facebook.com/wits.uwo/"><img src="images/f.png" alt="facebook" style="width: 100%" id="footerimg"></a></div>
+
+  					</div>
+  				</div>
+  			</div>
+	</div>
+
+	
+	<!-- js to make carousel interactive -->
 				<script>
 					var idx=1;
 					var len = 7; 	// there's 7 test elements at the moment
@@ -210,112 +358,6 @@
 					}
 
 				</script>	
-			</div>
-		</div>
-	</div>
-
-
-	<div class="bg2">
-		<div class="margin">
-		
-			<!-- containing the text and images in a table -->
-			<table style="margin-left:10%; padding: 5%">
-				<tr>
-				<td>
-					<img src="images/woman.png" alt="girl at desktop" width="80%">
-				</td>
-				
-				<td style="padding: 5%">
-					<h3 style="color: white; font-size: 1.5vw">INITIATIVES</h3>
-					<h2 style="color: white; font-size: 3vw">Mentorship <br> Programs</h2>
-					<h4 style="color: white; font-size: 1vw"">Our ongoing Ada Mentorship and Hack with <br>
-					Heart programs will provide a strong network <br>of mentors to help you build a project and arm<br>
-					you with skills to excel in the industry.</h4>
-					<a class="learnmorebutton" href="javascript:void(0)"><p>Learn more</p></a>
-				</td>
-				</tr>
-				<tr>
-				<td style="padding: 5%">
-					<h2 style="color: white; font-size: 3vw">Blog and Podcast</h2>
-					<h4 style="color: white; font-size: 1vw">Hear and read the thoughts of powerful <br>women in tech! Join us as we delve <br>into their stories and insights.</h4>
-					<a class="learnmorebutton"  href="javascript:void(0)"><p>Learn more</p></a>
-					
-				</td>
-				<td>
-					<img src="images/trailblazehers.png" alt="trailblaze-hers" width="60%">
-				</td>
-				</tr>	
-			</table>
-			
-		</div>
-		
-	</div>
-	
-	<!-- she hacks banner -->
-	<div class="containerbanner">
-  		<img src="images/shehacks.svg" alt="Snow" style="width:100%">
-  		<br><br>
-  		<a href="https://shehacks.ca/" class="btn" style="text-decoration: none;"><p>Learn More</p></a>
- 			
-	</div>
-	
-	<!-- community members carousel, it's cards for now bc there's only 2 people, we can make it into a carousel like above as we get more people -->
-	<div class="margin">
-		<h3>COMMUNITY</h3>
-		<table >
-		<tr>
-		<td >
-		<h2>Meet Our <br>Community <br> Members!<br><br><br><br><br></h2>
-		</td>
-		<td>
-		
-			<div class="card">
-  				<div class="container">
-    				<h3>JENNY LI</h3> 
-    				<img src="images/jenny.png" style="width: 30%"></img>
-    				<h4 style="font-size:1vw; font-weight: bold; line-height: 100%">HBA & Software Engineering</h4> 
-    				<h4 style="font-size:1vw; line-height: 100%">Year 4</h4> 
-    				<h4 style="font-size: 0.9vw; font-family: avenir">Super interested in all things tech, especially the beautiful interfaces and well crafted user experiences of the products I use in my everyday life!</h4>
- 					<a class="cardbutton" target="_blank" href="https://lijennifer.me/">See Website</a>
- 					<br><br>
-  				</div>
-			</div> 
-		
-				
-		
-			<div class="card"> 
-  				<div class="container">
-    				<h3>JANKI CHAUDHARI</h3> 
-    				<img src="images/janki.png" style="width: 30%"></img>
-    				<h4 style="font-size:1vw; font-weight: bold; line-height: 100%">Computer Science</h4> 
-    				<h4 style="font-size:1vw; line-height: 100%">Year 3</h4> 
- 					<h4 style="font-size:0.9vw; font-family: avenir">My curiosity makes me thrive. As it leads me to explore new technologies, read up research papers, and take up leadership roles.</h4>
- 					<a class="cardbutton" target="_blank" href="https://jankichaudhari226.github.io/">See Website</a>
- 					<br><br>
-  				</div>
-			</div> 
-		</td>
-		</table>
-		
-		
-				
-	</div>
-	</div>
-
-	<!-- footer -->
-	<div class="margin">
-		<div class="marginTop10" style="margin-bottom: 10%">
-			<h4 style="font-family:helvetica; font-size: 1vw">Women in Technology Society</h4>
-			<h4 style="font-family:helvetica; font-size: 1vw">1151 Richmond St, London, ON N6A 3K7</h4>
-			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">wits.uwo@gmail.com</h4>
-			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">Made with &#10084;&#65039; in London, ON <span style="float:right; font-weight:normal"> Social Media </span></h4>
-
-			<div style="float:right"><a href="http://www.instagram.com/wits.uwo/"><img src="images/i.png" alt="instagram" style="width: 100%" id="footerimg"></a></div>
-			<div style="float:right"><a href="http://www.twitter.com/wits.uwo/"><img src="images/t.png" alt="twitter" style="width: 100%" id="footerimg"></a></div>
-			<div style="float:right"><a href="http://www.facebook.com/wits.uwo/"><img src="images/f.png" alt="facebook" style="width: 100%" id="footerimg"></a></div>
-
-		</div>
-	</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
