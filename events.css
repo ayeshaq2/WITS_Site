@@ -57,7 +57,7 @@ h3{
 }
 
 /* body text */
-h4 {
+h4{
 	font-family: Helvetica;
 	font-style: normal;
 	font-weight: 500;
@@ -65,9 +65,17 @@ h4 {
 	color: #4B5D68;
 }
 
+h5{
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 700;
+	color: #0A2338;
+}
+
 /* body text */
 p {
 	font-family: Rubik;
+	color: #0A2338;
 }
 
 
@@ -167,6 +175,24 @@ nav {
 	margin: 70px 0;
 }
 
+.event-carousel-row-margin{
+	padding-bottom: 5%;
+}
+
+@media(max-width: 568px){
+	.event-carousel-row-margin{
+		padding-bottom: 9%;
+	}
+}
+
+/* @media(min-width: 992px){
+	.card-content{
+		text-align: left;
+		padding: 20px;
+	}
+	
+} */
+
 /* card properties
 .card {
   box-shadow: 0 4px 8px 0 rgba(255,0,0,0.2);
@@ -204,5 +230,9 @@ nav {
 }
 .card-content{
 	text-align: left;
-	padding: 15px;
+	padding: 10%;
+}
+
+section{
+	padding: 4rem 0;
 }
