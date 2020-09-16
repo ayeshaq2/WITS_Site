@@ -2,7 +2,30 @@ body {
 	margin: 0;	
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #0A2338;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10%;
+  font-family: 'nunito';
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 /* card margins */
 .marginCard{
@@ -100,7 +123,7 @@ h6 {
 	font-family: Helvetica;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 100%;
+	line-height: 160%;
 	color: #0A2338;
 }
 

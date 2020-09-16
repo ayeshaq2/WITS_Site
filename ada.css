@@ -81,6 +81,14 @@ h4 {
 	color: #4B5D68;
 }
 
+h6 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%;
+	color: #0A2338;
+}
+
 /* body font */
 p {
 	font-family: Rubik;

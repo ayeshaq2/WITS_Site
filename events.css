@@ -72,6 +72,16 @@ h5{
 	color: #0A2338;
 }
 
+h6 {
+
+	font-family: Helvetica;
+	font-style: normal;
+	color: #0A2338;
+
+	line-height: 160%;
+
+}
+
 /* body text */
 p {
 	font-family: Rubik;
