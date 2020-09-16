@@ -106,6 +106,16 @@ h4 {
 	color: #4B5D68;
 }
 
+h6 {
+
+	font-family: Helvetica;
+	font-style: normal;
+	color: #0A2338;
+
+	line-height: 160%;
+
+}
+
 /* body font */
 p {
 	font-family: Rubik;
@@ -120,7 +130,7 @@ nav {
 .navbar .nav-item .nav-link {
     font-family: "Rubik";
     font-weight: 600;
-    color: black;
+   color: #0A2338;
     transition: all 0.3s ease 0s;
 }
 .navbar .nav-item .nav-link:hover{
@@ -165,18 +175,49 @@ nav {
     align-items: center;
 }
 
-dding: 10px;
+
+.spotifybutton {
+	background-color:#E68976;
+	border: none;
+	color: white;
+	font-style: normal;
+	padding:4% 9%;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 50px;
 }
+
+a{
+	color: #E68976;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #edb4a8;
+	opacity: 0.5;
+	text-decoration: none;
+}
+
+/* landing page join us button hover color change*/
+.initbutton:hover{
+	background-color:  #e69f91;
+	transition: 0.3s;
+}
+
 
 /* links resting */
 #link{
 	text-decoration: none;
+	color: #0A2338;
 }
 
 /* links glow when hover */
 #link:hover{
-	text-decoration: none;
-	text-shadow: 0 0 5px #FDCDC2;
+	
+	color: pink;
 }
 
 /* center table */
