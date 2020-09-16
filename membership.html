@@ -15,188 +15,254 @@
 	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
     
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  
+	<script src="https://js.stripe.com/v3"></script>
+
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     
 </head>
 
-<body>
-
-
-	<div class="membershipbg">
-		<div class="margin">
-			<div class="topnav" id="myTopnav" style="padding: 5px">
-  				<a style="padding: 10px 2px;" href="index.html"><img src="images/wits.png" alt="wits logo"></a>
-  				<a href="membership.html"style="float:right; background:#E57154; border-radius: 10px; color: white"><p>JOIN US</p></a>
-  				<a href="about.html"style="float:right"><p>ABOUT US</p></a>
-  				<a href="partners.html"style="float:right"><p>PARTNER</p></a>
-  				<a href="initiatives.html"style="float:right"><p>INITIATIVES</p></a>
-  				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<header>
+		<nav class="navbar navbar-light navbar-expand-md fixed-top">
+			<div class = "container m-auto vertical-center">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<a href="#landing" class="navbar-brand vertical-center" style="padding: 5px auto 2px auto;"><img src="images/wits.png" alt="she/hacks"></a>
+				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="navbar-toggler-icon"></i>
+				</button>  
+				
+				<!-- collapse navbar -->
+				<div class="navbar-collapse collapse" id="navbarCollapse">
+						<ul class="navbar-nav mr-auto w-100 clearfix" >
+							<li class="nav-item vertical-center"><a class="nav-link" href="initiatives.html">INITIATIVES</a></li>
+							<li class="nav-item vertical-center"><a class="nav-link" href="partners.html">PARTNER</a></li>
+							<li class="nav-item vertical-center"><a class="nav-link" href="about.html">ABOUT US</a></li>
+							
+							<li class="nav-item vertical-center"><a class="nav-link" href="membership.html"><button class="join-button">JOIN US</button></a></li>
+						</ul>
+					</div>
+				</div>
+					</ul>
+				</div>
 			</div>
-			
-			<script>
-				function myFunction() {
-  					var x = document.getElementById("myTopnav");
-  					if (x.className === "topnav") {
-    					x.className += " responsive";
-  					} else {
-    					x.className = "topnav";
-  					}
-				}
-			</script>
-			
-			<div class="marginTop10">
+		</nav>
+	</header>
 
-				<table>
-					<tr>
-					<td style="width: 50%">
+	<section style="background: #E68976; padding-top: 10%;">
+		<div class="container">
+			<div class="row reverse-col">
+				<div class="col-lg-6 m-auto">
 						<h1>Break into tech <br>with WITS!<h1>
-						<h4 style="color: #0A2338;">Ready to take a stand and join the tech community? 
-Become a member of the WITS family and receive access 
-to a wonderful network of changemakers and resources to 
-get you involved in tech!</h4>
-						
-					</td>
-					<td style="width: 50%">
+							<h4 style="color: #0A2338;">Ready to take a stand and join the tech community? 
+							Become a member of the WITS family and receive access 
+							to a wonderful network of changemakers and resources to 
+							get you involved in tech!</h4>
+				</div>
+				<div class="col-lg-6">
 						<img src="images/membershippic.png" alt="main pic" class="responsive" width="300px" height="300px">
-					</td>
-					</tr>
-				</table>
-			</div>
-			
-			<div class="marginTop30">
-			
-				<h2 style="text-align:center; font-size: 2vw">Ready to join a community of boss women?</h2>
-				<br><Br>
-				<div class="centerbtn">
-					<a class="landingbutton" style="color: white; font-family: Rubik; font-size: 1vw" href="javascript:void(0)">Let's do it.</a>
 				</div>
 			</div>
-			<div class="marginTop20">
-			
-				<table id="membership">
-  					<tr>
-    					<th><h4 style="font-size: 1vw; font-family:helvetica; font-weight: bold; color:black">Available to all genders from any University</th>
-    					<th style="padding:2%">
-    						<h3 style="text-align: center; font-size:1vw; line-height:120%">GENERAL MEMBER</h3>
-        					<h2 style="text-align: center; font-size:1.7vw">Free</h2>
-    					</th>
-   						<th style="padding:2%">
-    						<h3 style="text-align: center; font-size:1vw; line-height:120%">WITS <br>MEMBER</h3>
-        					<h2 style="text-align: center; font-size:1.7vw">$15</h2>
-    					</th>
-  					</tr>
-  					<tr>
-    					<td><h4 style="color:black">Workshops and Educational Events</h4></td>
-   						<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
- 					</tr>
-  					<tr>
-   						<td><h4 style="color:black">Recruiting Series</h4></td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-  					</tr>
- 					<tr>
-    					<td><h4 style="color:black">Cookies and Code Events</h4></td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
- 					</tr>
-  					<tr>
-    					<td><h4 style="color:black">Advanced registration to limited capacity events</h4></td>
-    					<td>  </td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
- 					</tr>
-  					<tr>
-    					<td><h4 style="color:black">Access to exclusive tech resources and opportunities</h4></td>
-    					<td>   </td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-  					</tr>
- 					<tr>
-    					<td><h4 style="color:black">Bi-weekly member newsletters</h4></td>
-    					<td>  </td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-  					</tr>
-  					<tr>
-    					<td><h4 style="color:black">Exclusive profile feature on WITS website</h4></td>
-    					<td>  </td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-  					</tr>
-  					<tr>
-    					<td><h4 style="color:black">Free or discounted entry for ticketed events</h4></td>
-    					<td>  </td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-  					</tr>
- 					<tr>
-    					<td><h4 style="color:black">Discount code for the WITS merch store.</h4></td>
-    					<td>  </td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-  					</tr>
-  					<tr>
-    					<td><h4 style="color:black">Resume editing and review by WITS execs</h4></td>
-    					<td>  </td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-  					</tr>
-  					<tr>
-    					<td><h4 style="color:black">Resume editing and review by WITS execs</h4></td>
-    					<td>  </td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
- 					</tr>
-  					<tr style="background-color: #F1EFE2;">
-    					<td><h4 style="color:black">These perks are available for female & non-binary Western University students only.</h4></td>
-    					<td></td>
-    					<td></td>
- 					</tr>
-  					<tr>
-    					<td><h4 style="color:black">Exclusive access to our Ada Mentorship Program</h4></td>
-    					<td>  </td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-  					</tr>
-  					<tr>
-    					<td><h4 style="color:black">Exclusive access to our Hack with Heart Program</h4></td>
-    					<td>  </td>
-    					<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
- 					</tr>
-  					<tr>
-    					<td><h4 style="color:black">Exclusive access to out Tech Coffee Chat series</h4></td>
-    					<td> </td>
-   						<td><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
-  					</tr>
-				</table>
-				<br><br>
-			
-			</div>
-			
-			</div>
-			
+			<br><br><br>
 		</div>
-		<div style="background: #F4D089;">
+	</section>
+	<img src="images/membership-wave.svg" class="w-100 mb-5">	
+	<div class="container">
+		<h2 style="text-align:center">Ready to join a community of boss women?</h2>
+		<br><Br>
+		<div class="row justify-content-center">
+			<button type="button" class="btn btn-lg rounded-pill landingbutton" style="color: white; font-family: Rubik;" data-toggle="modal" data-target="#membershipWarning">Let's do it.</button>
+		</div>
+	</div>
+	<div class="container py-5">
+		<table class="table" id="membership">
+			<tr>
+				<th class="align-middle"><h4 style="font-family:helvetica; font-weight: bold; color:black">Available to all genders from any University</th>
+				<th style="padding:2%">
+					<h3 style="text-align: center; line-height:120%">GENERAL MEMBER</h3>
+					<h2 style="text-align: center;">Free</h2>
+				</th>
+					<th style="padding:2%">
+					<h3 style="text-align: center;line-height:120%">WITS <br>MEMBER</h3>
+					<h2 style="text-align: center;">$15</h2>
+				</th>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Workshops and Educational Events</h4></td>
+				<td align="center"><i class="fa fa-check" style="color:green"></i></td>
+				<td align="center"><i class="fa fa-check" style="color:green"></i></td>
+			</tr>
+			<tr>
+					<td><h4 style="color:black">Recruiting Series</h4></td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Cookies and Code Events</h4></td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Advanced registration to limited capacity events</h4></td>
+				<td align="center">  </td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Access to exclusive tech resources and opportunities</h4></td>
+				<td align="center">   </td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Bi-weekly member newsletters</h4></td>
+				<td align="center">  </td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Exclusive profile feature on WITS website</h4></td>
+				<td>  </td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Free or discounted entry for ticketed events</h4></td>
+				<td>  </td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Discount code for the WITS merch store.</h4></td>
+				<td>  </td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Resume editing and review by WITS execs</h4></td>
+				<td>  </td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr style="background-color: #F1EFE2;">
+				<td><h4 style="color:black">These perks are available for female & non-binary Western University students only.</h4></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Exclusive access to our Ada Mentorship Program</h4></td>
+				<td>  </td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Exclusive access to our Hack with Heart Program</h4></td>
+				<td>  </td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+			<tr>
+				<td><h4 style="color:black">Exclusive access to out Tech Coffee Chat series</h4></td>
+				<td> </td>
+				<td align="center"><i class="fa fa-check" style="font-size:3vw;color:green"></i></td>
+			</tr>
+		</table>
+	</div>
+	<section style="background: #F4D089; padding: 7% 0;">
+		<div class="container-fluid">
+			<h2 style="text-align:center">Ready to join a community of boss women?</h2>
+			<br><Br>
+			<div class="row justify-content-center">
+				<button type="button" class="btn btn-lg rounded-pill landingbutton" style="color: white; font-family: Rubik;" data-toggle="modal" data-target="#membershipWarning">Let's do it.</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="marginTop10" style="margin-bottom: 5%">
 		
-				<h2 style="text-align:center; font-size: 2vw"><br><Br><Br>Ready to join a community of boss women?</h2>
-				<Br><Br>
-				<div class="centerbtn">
-					<a class="landingbutton" style="color: white; font-family: Rubik; font-size: 1vw" href="javascript:void(0)">Let's do it.</a>
+			<div class="container">
+  				<div class="row reverse-col">
+  					<div class="col">
+  						<h6 style="font-family:helvetica; font-weight: bold;">Women in Technology Society</h6>
+						<h6 style="font-family:helvetica; font-weight: bold;">1151 Richmond St, London, ON N6A 3K7</h6>
+						<h6 style="font-family:helvetica">wits.uwo@gmail.com</h6>
+						<h6 style="font-family:helvetica ">Made with &#10084;&#65039;&nbsp in London, ON</h6>
+						<br>
+					
+  					</div>
+  					
+  					<div class="col d-none d-lg-block">
+  						<div style="float:right; padding: 3%"><a href="http://www.instagram.com/wits.uwo/"><img src="images/instagram.png" alt="instagram" style="width: 100%" id="footerimg"></a></div>
+  						<div style="float:right; padding: 3%"><a href="http://www.twitter.com/wits.uwo/"><img src="images/linkedin.png" alt="twitter" style="width: 100%" id="footerimg"></a></div>
+						<div style="float:right; padding: 3%"><a href="http://www.facebook.com/wits.uwo/"><img src="images/facebooksmall.png" alt="facebook" style="width: 100%" id="footerimg"></a></div>  					
+  					
+  					</div>
+  					
+  					
+  				</div>
+  				<div class="row d-block d-md-none" >
+  					<div class="col">
+  						<div style="float:left; padding: 3%"><a href="http://www.instagram.com/wits.uwo/"><img src="images/instagram.png" alt="instagram" style="width: 100%" id="footerimg"></a></div>
+  						<div style="float:left; padding: 3%"><a href="http://www.twitter.com/wits.uwo/"><img src="images/linkedin.png" alt="twitter" style="width: 100%" id="footerimg"></a></div>
+						<div style="float:left; padding: 3%"><a href="http://www.facebook.com/wits.uwo/"><img src="images/facebooksmall.png" alt="facebook" style="width: 100%" id="footerimg"></a></div>  					
+  					
+  					</div>
+  				</div>
+  				
+  			</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="membershipWarning" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modalroundedcorners" role="document">
+			<div class="modal-content py-4 px-5 rounded-lg">
+				<button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-header text-center">
+					<h4 class="modal-title" id="exampleModalLongTitle" style="color: #0A2338; font-size: 23px">Please ensure to use your university email as WITS memberships are only open to students. </h4>
 				</div>
-				<br><br><br><br><br><br>
+				<div class="modal-body text-center">
+						<p style="font-weight: normal; font-size:14px">
+							Certain member benefits are only available to female/non-binary and Western University students. 
+							<a class="buttonHover" href="/membership.html">Please click  here for more information.</a>
+						</p>
+				</div>
+				<div class="modal-footer text-center">
+					<button
+					class="btn btn-sm rounded-pill landingbutton mx-auto" style="color: white; font-family: Rubik; font-size: 16px"
+					id="checkout-button-price_1HPhoxEEILg0FKcAjGc4OHXR"
+					role="link"
+					type="button">
+					<strong> Continue to Checkout</strong>
+					</button>
+					<script>
+						(function() {
+							var stripe = Stripe('pk_test_51HPeZ2EEILg0FKcAAXmlQO4ph78sgIDFQD4D1swu95bGA12DqCiC0hl73AsR18aWCvwoDdYbt9beKMCn87C4pjSJ00oL2uFOYC');
+						
+							var checkoutButton = document.getElementById('checkout-button-price_1HPhoxEEILg0FKcAjGc4OHXR');
+							checkoutButton.addEventListener('click', function () {
+							// When the customer clicks on the button, redirect
+							// them to Checkout.
+							stripe.redirectToCheckout({
+								lineItems: [{price: 'price_1HPhoxEEILg0FKcAjGc4OHXR', quantity: 1}],
+								mode: 'payment',
+								// Do not rely on the redirect to the successUrl for fulfilling
+								// purchases, customers may not always reach the success_url after
+								// a successful payment.
+								// Instead use one of the strategies described in
+								// https://stripe.com/docs/payments/checkout/fulfillment
+								successUrl: "https://www.google.com",
+								cancelUrl: "https://www.google.com",
+							})
+							.then(function (result) {
+								if (result.error) {
+								// If `redirectToCheckout` fails due to a browser or network
+								// error, display the localized error message to your customer.
+								var displayError = document.getElementById('error-message');
+								displayError.textContent = result.error.message;
+								}
+							});
+							});
+						})();
+					</script>
+				</div>
+			</div>
 		</div>
 	</div>
-	
-	<div class="margin">
-		<div class="marginTop10" style="margin-bottom: 10%">
-			<h4 style="font-family:helvetica; font-size: 1vw">Women in Technology Society</h4>
-			<h4 style="font-family:helvetica; font-size: 1vw">1151 Richmond St, London, ON N6A 3K7</h4>
-			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">wits.uwo@gmail.com</h4>
-			<h4 style="font-family:helvetica; font-weight: bold; font-size: 1vw">Made with &#10084;&#65039; in London, ON <span style="float:right; font-weight:normal"> Social Media </span></h4>
+	<div id="error-message"></div>
 
-			<div style="float:right"><a href="http://www.instagram.com/wits.uwo/"><img src="images/i.png" alt="instagram" style="width: 100%" id="footerimg"></a></div>
-			<div style="float:right"><a href="http://www.twitter.com/wits.uwo/"><img src="images/t.png" alt="twitter" style="width: 100%" id="footerimg"></a></div>
-			<div style="float:right"><a href="http://www.facebook.com/wits.uwo/"><img src="images/f.png" alt="facebook" style="width: 100%" id="footerimg"></a></div>
-
-		</div>
-
-	</div>
-		
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
