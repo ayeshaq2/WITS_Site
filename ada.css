@@ -98,7 +98,7 @@ nav {
     transition: all 0.3s ease 0s;
 }
 .navbar .nav-item .nav-link:hover{
-    color: #E57154;
+    color: white;
 }
 .nav-link.active {
     color: #E57154 !important;
