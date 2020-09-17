@@ -35,7 +35,30 @@
 }
 
 
+.modal-content {
+	background-color: #F1EFE2;
+ }
 
+ .modal-header {
+	border-bottom: 0 none;
+	padding-bottom: 0px;
+}
+
+.modal-footer {
+    border-top: 0 none;
+}
+
+.modal-content  {
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    border-radius: 15px !important; 
+}
+
+.modal-img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* mobile responsive */
 
@@ -318,6 +341,55 @@ section{
 #footerimg:hover{
 	opacity: 0.7;
 }
+
+.checkmark__circle {
+	stroke-dasharray: 400; /* ORIGINALLY 166px */
+	stroke-dashoffset: 400; /* ORIGINALLY 166px */
+	stroke-width: 2;
+	stroke-miterlimit: 10;
+	stroke: #E68976;
+	fill: none;
+	animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+  }
+  
+  .checkmark {
+	width: 150px; /* ORIGINALLY 56px */
+	height: 150px; /* ORIGINALLY 56px */
+	border-radius: 50%;
+	display: block;
+	stroke-width: 2;
+	stroke: #F1EFE2;
+	stroke-miterlimit: 10;
+	margin: 10% auto;
+	box-shadow: inset 0px 0px 0px #E68976;
+	animation: fill .4s ease-in-out .2s forwards, scale .3s ease-in-out .9s both;
+  }
+  
+  .checkmark__check {
+	transform-origin: 50% 50%;
+	stroke-dasharray: 150; /* ORIGINALLY 48px */
+	stroke-dashoffset: 150; /* ORIGINALLY 48px*/
+	animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+  }
+  
+  @keyframes stroke {
+	100% {
+	  stroke-dashoffset: 0;
+	}
+  }
+  @keyframes scale {
+	0%, 100% {
+	  transform: none;
+	}
+	50% {
+	  transform: scale3d(1.1, 1.1, 1);
+	}
+  }
+  @keyframes fill {
+	100% {
+	  box-shadow: inset 0px 0px 0px 80px #E68976;
+	}
+  }
 
 .main-splash{
 	padding-top: 10%;

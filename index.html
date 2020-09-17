@@ -397,25 +397,31 @@
 				<button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
-				<div class="modal-header text-center">
-					<img src="images/success.svg" style="margin-top: -5px;">	
-					<h4 class="modal-title" id="exampleModalLongTitle" style="color: #0A2338; font-size: 23px">Sucesss!</h4>
+				<div class="modal-header">
+					<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="500px">
+						<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+						<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+					</svg>
 				</div>
 				<div class="modal-body text-center">
-						<p style="font-weight: normal; font-size:14px">
-							Certain member benefits are only available to female/non-binary and Western University students. <br>
-							<a class="buttonHover" href="membership.html">Please click here for more information.</a>
+						<p style="font-weight: normal; font-size:18px">
+								<strong style="font-size:22px">Welcome to the WITS community! </strong>
+								<br>
+								A receipt will be emailed to you shortly.
 						</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			if (paymentSuccess == 1){
+	<script>
+		$(window).on('load',function(){
+			var url_string = window.location.href;
+			var url = new URL(url_string);
+			var c = url.searchParams.get("paymentSuccess");
+			if (c == 1) {
 				$('#successModal').modal('show');
 			}
-		})
+		});
 	</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
