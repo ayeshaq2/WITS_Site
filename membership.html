@@ -217,8 +217,8 @@
 				</div>
 				<div class="modal-body text-center">
 						<p style="font-weight: normal; font-size:14px">
-							Certain member benefits are only available to female/non-binary and Western University students. 
-							<a class="buttonHover" href="#membershiptable">Please click  here for more information.</a>
+							Certain member benefits are only available to female/non-binary and Western University students. <br>
+							<a class="buttonHover" onClick="window.location.reload();return false;"  data-dismiss="modal">Please click  here for more information.</a>
 						</p>
 				</div>
 				<div class="modal-footer text-center">
@@ -226,27 +226,27 @@
 					class="btn btn-sm rounded-pill landingbutton mx-auto" style="color: white; font-family: Rubik; font-size: 16px"
 					id="checkout-button-price_1HPhoxEEILg0FKcAjGc4OHXR"
 					role="link"
+					target="_blank"
 					type="button">
 					Continue to Checkout
 					</button>
 					<script>
 						(function() {
-							var stripe = Stripe('pk_test_51HPeZ2EEILg0FKcAAXmlQO4ph78sgIDFQD4D1swu95bGA12DqCiC0hl73AsR18aWCvwoDdYbt9beKMCn87C4pjSJ00oL2uFOYC');
-						
+							var stripe = Stripe('pk_live_51HRKErI0omsarzuVeaQCilo8REzURIoo5KZUxRd5EVQFdQTQEUgTHbYAylnUYjCeO6dKbmA44uXEhUMSuwQXCD0e001Kg3tvuu');
 							var checkoutButton = document.getElementById('checkout-button-price_1HPhoxEEILg0FKcAjGc4OHXR');
 							checkoutButton.addEventListener('click', function () {
 							// When the customer clicks on the button, redirect
 							// them to Checkout.
 							stripe.redirectToCheckout({
-								lineItems: [{price: 'price_1HPhoxEEILg0FKcAjGc4OHXR', quantity: 1}],
+								lineItems: [{price: 'price_1HSDP8I0omsarzuVHy5RQSYL', quantity: 1}],
 								mode: 'payment',
 								// Do not rely on the redirect to the successUrl for fulfilling
 								// purchases, customers may not always reach the success_url after
 								// a successful payment.
 								// Instead use one of the strategies described in
 								// https://stripe.com/docs/payments/checkout/fulfillment
-								successUrl: "https://www.google.com",
-								cancelUrl: "https://www.google.com",
+								successUrl: "https://www.wits-uwo.com",
+								cancelUrl: "https://www.wits-uwo.com",
 							})
 							.then(function (result) {
 								if (result.error) {
