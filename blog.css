@@ -106,21 +106,20 @@ h4 {
 	color: #4B5D68;
 }
 
-h6 {
-
-	font-family: Helvetica;
-	font-style: normal;
-	color: #0A2338;
-
-	line-height: 160%;
-
+h6{
+    font-weight: 700;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    color: #0A2338;
 }
 
-/* body font */
-p {
-	font-family: Rubik;
-	font-size: 1vw;
-	font-weight: bold;
+
+p{
+    color: #0A2338;
+    font-weight: 400;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    color: #0A2338;
 }
 
 /*navbar*/
@@ -242,15 +241,31 @@ table.center {
   	margin-left:auto; 
   	margin-right:auto;
 }
-
-
-/* social media links */
-#footerimg {
-	opacity: 1.0;
+/*footer*/
+.social-icon{
+    float:right; 
+    width: 50px;
+    height: 50px;
+    margin: 0 1%;
 }
 
-/* social media links hover opacity change*/
-#footerimg:hover{
-	opacity: 0.7;
+.social-icon:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.link{
+    color: #0A2338;
+}
+
+.link:hover{
+    color: #E57154;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px){
+    .social-icon{
+        float: left;
+    }
 }
 
