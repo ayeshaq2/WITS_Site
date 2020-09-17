@@ -245,7 +245,7 @@
 								// a successful payment.
 								// Instead use one of the strategies described in
 								// https://stripe.com/docs/payments/checkout/fulfillment
-								successUrl: "https://wits-uwo.ca/",
+								successUrl: "https://wits-uwo.ca?paymentSuccess=1",
 								cancelUrl: "https://wits-uwo.ca/",
 							})
 							.then(function (result) {

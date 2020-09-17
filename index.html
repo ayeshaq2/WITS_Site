@@ -390,6 +390,33 @@
 							}]
 						});
 				</script>
+	
+	<div class="modal fade" id="successModal" role="dialog">
+		<div class="modal-dialog modal-dialog-centered modalroundedcorners" role="document">
+			<div class="modal-content py-4 px-5 rounded-lg">
+				<button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				<div class="modal-header text-center">
+					<img src="images/success.svg" style="margin-top: -5px;">	
+					<h4 class="modal-title" id="exampleModalLongTitle" style="color: #0A2338; font-size: 23px">Sucesss!</h4>
+				</div>
+				<div class="modal-body text-center">
+						<p style="font-weight: normal; font-size:14px">
+							Certain member benefits are only available to female/non-binary and Western University students. <br>
+							<a class="buttonHover" href="membership.html">Please click here for more information.</a>
+						</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			if (paymentSuccess == 1){
+				$('#successModal').modal('show');
+			}
+		})
+	</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
