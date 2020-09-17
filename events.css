@@ -109,30 +109,25 @@ p {
 }
 
 
-/* navbar */
+/*navbar*/
 nav {
     z-index: 3000;
 }
-
 .navbar .nav-item .nav-link {
     font-family: "Rubik";
     font-weight: 600;
-    color: black;
+    color: #0A2338;
     transition: all 0.3s ease 0s;
 }
-
 .navbar .nav-item .nav-link:hover{
     color: #E57154;
 }
-
 .nav-link.active {
     color: #E57154 !important;
   }
-
 .navbar-brand img {
     width: 70px;
 }
-
 .navbar {
     position: fixed;
     display: flex;
@@ -141,7 +136,6 @@ nav {
     background: #B3E2D4;
     padding: .5rem 1rem;
 }
-
 .navbar .join-button{
     background-color:  #E57154;
     box-sizing: border-box;
@@ -153,18 +147,16 @@ nav {
     font-weight: 600;
     color:  white;
 }
-
 .navbar button:hover{
 	background-color:  #0A2338;
 	transition: all 0.3s ease 0s;
 }
-
 .navbar ul{
     justify-content: flex-end; 
     font-weight: 600;
     color: white;
 }
-/*navbar end*/
+/*navbar*/
 
 .vertical-center{
     display:flex;
