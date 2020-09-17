@@ -103,7 +103,17 @@ h4 {
 	font-weight: 500;
 
 	line-height: 160%;
+	color: #0A2338;
+}
+
+h4:hover {
+
+	font-style: normal;
+	font-weight: 500;
+
+	line-height: 160%;
 	color: #4B5D68;
+	transition: 0.3s;
 }
 
 h6{
@@ -121,6 +131,7 @@ p{
     font-size: 16px;
     color: #0A2338;
 }
+
 
 /*navbar*/
 nav {
