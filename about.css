@@ -5,30 +5,25 @@ body {
 }
 
 
-/* navbar */
+/*navbar*/
 nav {
     z-index: 3000;
 }
-
 .navbar .nav-item .nav-link {
     font-family: "Rubik";
     font-weight: 600;
-    color: black;
+    color: #0A2338;
     transition: all 0.3s ease 0s;
 }
-
 .navbar .nav-item .nav-link:hover{
     color: #E57154;
 }
-
 .nav-link.active {
     color: #E57154 !important;
   }
-
 .navbar-brand img {
     width: 70px;
 }
-
 .navbar {
     position: fixed;
     display: flex;
@@ -37,7 +32,6 @@ nav {
     background: #B3E2D4;
     padding: .5rem 1rem;
 }
-
 .navbar .join-button{
     background-color:  #E57154;
     box-sizing: border-box;
@@ -49,27 +43,15 @@ nav {
     font-weight: 600;
     color:  white;
 }
-
 .navbar button:hover{
 	background-color:  #0A2338;
 	transition: all 0.3s ease 0s;
 }
-
 .navbar ul{
     justify-content: flex-end; 
     font-weight: 600;
     color: white;
 }
-
-.vertical-center{
-    display:flex;
-    align-items: center;
-}
-
-.horizontal-center{
-    text-align: center;
-}
-
 /*navbar*/
 
 * {
@@ -158,56 +140,68 @@ td {
 	background-size:contain;
 }
 
-/* heading font */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Rubik:wght@400;500;600;700&display=swap');
+
+/*Page header*/
 h1{
-	color: #0A2338;
+    color: #0A2338;
 	font-family: Helvetica;
 	font-style: normal;
 	font-weight: bold;
-	line-height: 110%;
+    line-height: 110%;
+    font-size: 3.5rem;
 }
 
-/* subtitle font */
-h2 {
-	font-family: Helvetica;
+/*Section headers*/
+h2{
+    font-family: Helvetica;
 	font-style: normal;
 	font-weight: bold;
 	line-height: 140%;
 	color: #402B2B;
 }
 
-/* subtitle accent fonts */
+/*orange rubik mini headers*/
 h3{
-	font-family: Rubik;
+    font-family: "Rubik";
 	font-style: normal;
-	font-weight: bold;
-	line-height: 40px;
-	color: #E57154;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #E57154;
+    line-height: 40px;
 }
 
-/* body font */
-h4 {
-	font-family: Helvetica;
+/*subheadings*/
+h4{
+    font-family: Helvetica;
 	font-style: normal;
-	font-weight: 500;
-	line-height: 160%;
-	color: #4B5D68;
-}
-
-h6 {
-	font-family: Helvetica;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 160%;
+	font-weight: 600;
+	line-height: 180%;
 	color: #0A2338;
 }
 
-
-/* body font */
-p {
-	font-family: Rubik;
-	font-weight: bold;
+/*paragraph text in the header*/
+h5{
+    font-weight: 400;
+    font-family: "Nunito Sans";
+    color: #4B5D68;
 }
+
+h6{
+    font-weight: 700;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    color: #0A2338;
+}
+
+p{
+    color: #0A2338;
+    font-weight: 400;
+    font-family: "Nunito Sans";
+    font-size: 16px;
+    color: #0A2338;
+}
+
 
 /* mobile view icon for navbar*/
 @media screen and (max-width: 600px) {
@@ -245,18 +239,25 @@ p {
 }
 
 
-/* social media links */
-#footerimg {
-	opacity: 1.0;
+/*footer*/
+.social-icon{
+    float:right; 
+    width: 50px;
+    height: 50px;
+    margin: 0 1%;
 }
 
-/* social media links hover opacity change*/
-#footerimg:hover{
-	opacity: 0.7;
+.social-icon:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease;
 }
 
-section{
-	padding: 4rem 0;
+.link{
+    color: #0A2338;
 }
 
+.link:hover{
+    color: #E57154;
+    transition: all 0.3s ease;
+}
 

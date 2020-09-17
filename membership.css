@@ -97,15 +97,14 @@ p {
 	font-family: Rubik;
 	font-weight: bold;
 }
-
-/* navbar */
+/*navbar*/
 nav {
     z-index: 3000;
 }
 .navbar .nav-item .nav-link {
     font-family: "Rubik";
     font-weight: 600;
-    color: black;
+    color: #0A2338;
     transition: all 0.3s ease 0s;
 }
 .navbar .nav-item .nav-link:hover{
