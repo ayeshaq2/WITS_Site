@@ -191,6 +191,10 @@ nav {
 	margin-top: 30%;
 }
 
+.btn:focus,.btn:active {
+	outline: none !important;
+	box-shadow: none;
+ }
 
 /* lets do it button */
 .landingbutton {
