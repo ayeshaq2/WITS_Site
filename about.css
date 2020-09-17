@@ -184,7 +184,7 @@ h4{
 h5{
     font-weight: 400;
     font-family: "Nunito Sans";
-    color: #4B5D68;
+    color: #0A2338;
 }
 
 h6{
@@ -261,3 +261,8 @@ p{
     transition: all 0.3s ease;
 }
 
+@media (max-width: 768px){
+    .social-icon{
+        float: left;
+    }
+}
