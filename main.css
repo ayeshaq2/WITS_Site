@@ -29,10 +29,19 @@ body {
 }
 
 @media (max-width: 568px){
+	.mobileimg2{
+		max-width: 90%;
+	}
+}
+
+@media (max-width: 568px){
 	i{
 		font-size: 10vw;
 	}
 }
+
+
+
 
 /* mobile responsive */
 
@@ -96,9 +105,24 @@ h4 {
 	font-family: Helvetica;
 	font-style: normal;
 	font-weight: 500;
-	
 	line-height: 160%;
-	color: #4B5D68;
+	color: white;
+}
+
+h7 {
+	font-family: 'Nunito';
+	font-style: normal;
+	color: #0A2338;
+	line-height: 160%;
+}
+
+h5{
+	margin-top: 3%; 
+	margin-bottom: 5%; 
+	font-family: Rubik; 
+	font-style: normal; 
+	font-weight: bold; 
+	color: #E57154;
 }
 
 /* footer font */
@@ -112,10 +136,22 @@ h6 {
 }
 
 
+a {
+	color: #0A2338;
+}
+
+a:hover {
+	color: #E57154;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
 /* body font */
 p {
 	font-family: Rubik;
-	font-weight: bold;
+	font-weight: normal;
+	color: #0A2338;
+
 }
 
 /* navbar */
