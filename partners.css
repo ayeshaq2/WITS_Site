@@ -12,7 +12,7 @@ body {
   visibility: hidden;
   width: 120px;
   background-color: #0A2338;
-  color: #fff;
+
   text-align: center;
   border-radius: 6px;
   padding: 10%;
@@ -22,6 +22,8 @@ body {
   position: absolute;
   z-index: 1;
 }
+
+
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
@@ -108,7 +110,7 @@ h4 {
 	font-weight: 500;
 
 	line-height: 100%;
-	color: #4B5D68;
+	color: #0A2338;
 }
 
 h5 {
