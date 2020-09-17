@@ -340,6 +340,16 @@ section{
 	padding-bottom: 7%;
 }
 
+a {
+	color: #0A2338;
+}
+
+a:hover {
+	color: #E57154;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
 @media(max-width: 568px){
 	.past-partners-slider{
 		padding-bottom: 13%;
