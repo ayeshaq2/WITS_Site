@@ -203,6 +203,10 @@ nav {
 	border-radius: 50px;
 }
 
+.row-bottom-margin { 
+	margin-bottom: 20px; 
+}
+
 a{
 	color: #E68976;
 	text-decoration: none;
