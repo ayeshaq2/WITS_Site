@@ -77,6 +77,10 @@ p{
 }
 
 /*margin classes*/
+.marginTop5Footer{
+	margin-top: 5%;
+}
+
 .marginTop10{
 	margin-top: 10%;
 }
