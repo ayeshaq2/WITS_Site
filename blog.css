@@ -123,14 +123,14 @@ p {
 	font-weight: bold;
 }
 
-/* navbar */
+/*navbar*/
 nav {
     z-index: 3000;
 }
 .navbar .nav-item .nav-link {
     font-family: "Rubik";
     font-weight: 600;
-   color: #0A2338;
+    color: #0A2338;
     transition: all 0.3s ease 0s;
 }
 .navbar .nav-item .nav-link:hover{
@@ -170,6 +170,19 @@ nav {
     font-weight: 600;
     color: white;
 }
+
+.landingbutton {
+	background-color: #E68976;
+	border: none;
+	color: white;
+	font-style: normal;
+	padding: 10px 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 50px;
+}
+
 .vertical-center{
     display:flex;
     align-items: center;
