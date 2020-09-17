@@ -1,9 +1,3 @@
-body {
-	margin: 0;
-	display: grid;
-	height: 100%;
-
-}
 
 /* mobile responsive */
 @media (max-width:991px){
@@ -154,14 +148,16 @@ p {
 
 }
 
-/* navbar */
+
+
+/*navbar*/
 nav {
     z-index: 3000;
 }
 .navbar .nav-item .nav-link {
     font-family: "Rubik";
     font-weight: 600;
-        color: #0A2338;
+    color: #0A2338;
     transition: all 0.3s ease 0s;
 }
 .navbar .nav-item .nav-link:hover{
@@ -201,11 +197,6 @@ nav {
     font-weight: 600;
     color: white;
 }
-.vertical-center{
-    display:flex;
-    align-items: center;
-}
-/*navbar*/
 
 
 
@@ -220,20 +211,22 @@ nav {
 	background-color: #E68976;
 	border: none;
 	color: white;
-	font-style: normal;
-	padding:4% 9%;
+	padding:3% 7%;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: "Nunito Sans";
 	cursor: pointer;
 	border-radius: 50px;
 }
 
 /* landing page join us button hover color change*/
 .landingbutton:hover{
-	background-color: #e69f91;
-	transition: 0.3s;
+	opacity: 0.5;
+	transition: all 0.3s ease;
+	color: white;
 }
 
 /* initiatives section button*/
@@ -280,19 +273,26 @@ nav {
 }
 
 
-
-
-.card:hover {
-	box-shadow: 0 8px 16px 0 rgba(255,0,0,0.3);
+.event-card{
+    box-shadow: 0 4px 8px 0 rgba(255,0,0,0.2);
 	transition: 0.3s;
-	border:none;
+	background: white;
+	border-radius: 20px;
+	width: 33%;
+	overflow: hidden;
 }
 
-.card {
-	box-shadow: 0 8px 16px 0 rgba(255,0,0,0.2);
-	border:none;
+.card-content h3{
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	line-height: 140%;
 }
 
+.card-content{
+	text-align: left;
+	padding: 10%;
+}
 
 /* carousel arrows */
 i {
@@ -305,7 +305,9 @@ i:hover {
 	opacity: 0.6;
 }
 
-
+section{
+	padding: 4rem 0;
+}
 
 /* social media links */
 #footerimg {
@@ -316,3 +318,19 @@ i:hover {
 #footerimg:hover{
 	opacity: 0.7;
 }
+
+.main-splash{
+	padding-top: 10%;
+}
+@media(max-width: 1200px){
+	.main-splash{
+		padding-top: 20%;
+	}
+}
+
+@media(max-width: 568px){
+	.main-splash h1{
+		font-size: 3rem;
+	}
+}
+

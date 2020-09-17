@@ -11,8 +11,17 @@
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+	<!--Slick slider-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+		
     
 </head>
 
@@ -44,11 +53,11 @@
 	
 	
 	
-	<section style="padding-top: 10%;background: #F1EFE2;">
+	<section class="main-splash" style="background: #F1EFE2;">
 		<div class="container">
 			<div class="row reverse-col">
 				<div class="col-lg-6 m-auto">
-					<h1>Building a Future <br>for Women* <br>in Tech</h1>
+					<h1>Building a Future for Women* in Tech</h1>
 					<br>
 					<h4 style="line-height: 160%; font-family:Nunito; color: #0A2338;">
 						At Women in Technology Society, we’re here
@@ -56,188 +65,98 @@
 						tech world, join our community today!
 					</h4>
 					<br>
-					<a class="landingbutton" style="color: white; font-family: Rubik; text-decoration: none" href="membership.html">Join our community</a>
+					<a class="landingbutton" href="membership.html">Join our community</a>
 				</div>
 				<div class="col-lg-1"></div>
-				<div class="col-lg-5 py-5">
-					<img class="mobileimg" src="images/mainpic.png" alt="main pic" width="80%">
+				<div class="col-lg-5 col-sm-12 col-12 m-auto py-5 horizontal-center">
+					<img class="mobileimg" src="images/mainpic.png" alt="main pic" width="100%">
 				</div>
 			</div>
 		</div>
 	</section>
-	<img src="images/main-wave.svg" class="w-100 mb-5">
+	<img src="images/header-waves/beige-wave.svg" class="w-100 mb-5" style="margin-top: -5px;">
 	
-	<div class="container">
-		<div class="row reverse-col">
-			<div class="col m-auto">
-				<br>
-				<img src="images/empoweringwomen.png" class="mobileimg2" style="width:120%">
-				<br>
-			</div>
-			<div class="col m-auto">
-				<br>
-				<img src="images/buildingnetworks.png" class="mobileimg2" style="width:120%">
-				<br>
-			</div>
-			<div class="col m-auto">
-				<br>
-				<img src="images/creatingpipelines.png" class="mobileimg2" style="width:120%">
-				<br>
-			</div>
-		</div>
-	</div>
 	
-<!--
-<div style="margin-top: 10%">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h3>EVENTS</h3>
-				
-			</div>
-			<div class="col">
-				
-			</div>
-			<div class="col">
-				<div style="float:right" >
-					<span onclick="pre()"><i class='fas fa-long-arrow-alt-left' style='font-size:2em; color: #ED4D47'></i></span>   <span onclick="next()"><i class='fas fa-long-arrow-alt-right' style='font-size:2em; color: #ED4D47'></i> 
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-12 m-auto">
+					<br>
+					<img src="images/empoweringwomen.png" class="mobileimg2" style="width:100%">
+					<br>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-12 m-auto">
+					<br>
+					<img src="images/buildingnetworks.png" class="mobileimg2" style="width:100%">
+					<br>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-12 m-auto">
+					<br>
+					<img src="images/creatingpipelines.png" class="mobileimg2" style="width:100%">
+					<br>
 				</div>
 			</div>
 		</div>
-		
-		<div class="row reverse-col">
-			<div class="col-lg-4 col-md-2 d-none d-lg-block">
-				
-				<h2>Upcoming <br>Events</h2>
-			</div>
-			
-			
-		
-			<div class="col-lg-4 col-md-5" id="div1">
-				<div class="card" style="width: 18rem; padding: 1%; float: right">
-						
-  					<div class="card-body">
-  						<h5>Software Engineering Interview Prep</h5>
-  						
-   						<h7 class="card-text">This workshop will be spent learning about the most common types of SWE interview coding questions.</h7>
-   						<br><br>
-   						<h7 class="card-title" style="line-height:100%; font-weight: bold">September 21st, 2020</h7>
-   						
-    					<a href="events.html" class="btn btn-primary" style="margin-top:5%; background-color: #E68976; border:none">Learn more</a>
-    					
-  					</div>
-  				</div>
-			</div>
-			<div class="col-lg-4 col-md-5" id="div2">
-				<div class="card" style="width: 18rem; padding: 1%; float: right">
-						
-  					<div class="card-body">
-  						<h5>Design Technical Interview Prep</h5>
-    					
-    					
-   						<h7>This workshop will be spent learning about the design processes, UX/UI, usability testing, and more.</h7>
-   						<br><br>
-   						<h7 class="card-title" style="line-height:100%; font-weight: bold">September 23rd, 2020</h7>
-   						
-    					<a href="events.html" class="btn btn-primary" style="margin-top:5%; background-color: #E68976; border:none">Learn more</a>
-  					</div>
-  				</div>
-			</div>
-			<div class="col-lg-4 col-md-5" id="div3">
-				<div class="card" style="width: 18rem; padding: 1%;  float: right">
-					<div class="card-body">
-  						<h5>Product Management Interview Prep</h5>
-    					
-    					
-   						<h7>This workshop will be spent learning about Product Sense and Analytical questions for interviews.</h7>
-   						<br><br>
-   						<h7 class="card-title" style="line-height:100%; font-weight: bold">September 23rd, 2020</h7>
-   						
-    					<a href="events.html" class="btn btn-primary" style="margin-top:5%; background-color: #E68976; border:none">Learn more</a>
-  					</div>	
-  					
-  				</div>
+	</section>
 
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+					<h3>
+						EVENTS
+					</h3>
+					<h2>
+						Upcoming<br>Events
+					</h2>
+				</div>
+				<div class="col-lg-9 col-md-12 col-sm-12 col-12">
+					<!--slider-->
+					<div class="slider m-auto">
+	
+						<div class="event-card m-3"  style="height: 260px;">
+							<div class="card-content">
+								<h3>Software Engineering Interview Prep</h3>
+								<p>You'll be learning the most common types of coding questions asked during SWE interviews.</p>
+							</div>
+						</div>
+	
+						<div class="event-card m-3"  style="height: 260px;">
+							<div class="card-content">
+								<h3>Design Interview Prep</h3>
+								<p>This workshop will be spent learning about design processes, UX/UI, usability testing etc.</p>
+							</div>
+						</div>
+	
+						<div class="event-card m-3"  style="height: 260px;">
+							<div class="card-content">
+								<h3>PM Interview Prep</h3>
+								<p>This workshop will be spent learning about Product Sense and Analytical questions.</p>
+							</div>
+						</div>
+
+						<div class="event-card m-3" style="height: 260px;">
+							<div class="card-content">
+								<h3>Intro to Python</h3>
+								<p>Come learn about the basics of coding with Python!</p>
+							</div>
+						</div>
+
+						<div class="event-card m-3" style="height: 260px;">
+							<div class="card-content">
+								<h3>GitHub Overview</h3>
+								<p>Come join this months casual work night - this session's theme includes a GitHub overview!</p>
+							</div>
+						</div>
+					</div>
+					<!--slider ends-->
+				</div>
 			</div>
-			<div class="col-lg-4 col-md-5" id="div4">
-				<div class="card" style="width: 18rem; padding: 1%; float: right">
-						
-  					<div class="card-body">
-  						<h5>Introduction to Python </h5>
-    					
-    					<h7>A panel to answer questions about landing a job at a tech startup, what it’s like to work for a startup, and more!</h7>
-
-   						<br><br>
-   						<h7 class="card-title" style="line-height:100%; font-weight: bold">October 8th, 2020</h7>
-   						<br>
-    					<a href="events.html" class="btn btn-primary" style="margin-top:5%; background-color: #E68976; border:none">Learn more</a>
-    					<br><br>
-    					
-   					
-  					</div>
-  				</div>
-
-			</div>
-			<div class="col-lg-4 col-md-5" id="div5">
-				<div class="card" style="width: 18rem; padding: 1%; float: right">
-						
-  					<div class="card-body">
-  						<h5>Tech Startup Panel</h5>
-    					
-    				
-   						<h7>A panel to answer questions about landing a job at a tech startup, what it’s like to work for a startup, and more!</h7>
-
-   						<br><br>
-   						<h7 class="card-title" style="line-height:100%; font-weight: bold">October 8th, 2020</h7>
-   						<br>
-    					<a href="events.html" class="btn btn-primary" style="margin-top:5%; background-color: #E68976; border:none">Learn more</a>
-    					<br><br>
-  					</div>
-  				</div>
-
-			</div>
-			<div class="col-lg-4 col-md-5" id="div6">
-				<div class="card" style="width: 18rem; padding: 1%; float: right">
-						
-  					<div class="card-body">
-  						<h5>Cookies and Code - GitHub Overview</h5>
-    					
-    					
-   						<h7>Casual code sessions where you can work on projects and questions - this session's theme is GitHub!</h7>
-   						<br><br>
-   						<h7 class="card-title" style="line-height:100%; font-weight: bold">October 19th, 2020</h7>
-    					<a href="events.html" class="btn btn-primary" style="margin-top:5%; background-color: #E68976; border:none">Learn more</a>
-    					<br>
-  					</div>
-  				</div>
-
-			</div>
-			<div class="col-lg-4 col-md-5" id="div7">
-				<div class="card" style="width: 18rem; padding: 1%; float: right">
-						
-  					<div class="card-body">
-  						<h5>Introduction to UX/UI Design</h5>
-    					
-    				
-   						<h7>This workshop will cover UX/UI basics, from visual design to Figma prototyping, we are going to cover it all!</h7>
-   						<br><br>
-   						<h7 class="card-title" style="line-height:100%; font-weight: bold">October 29th, 2020</h7>
-    					<a href="events.html" class="btn btn-primary" style="margin-top:5%; background-color: #E68976; border:none">Learn more</a>
-  					</div>
-  				</div>
-
-			</div>
-			
-		
 		</div>
-		
-	</div>
-</div>
--->
-
+	</section>
 	
 	<div class="marginTop10">
-	<img src="images/index-wave.svg" class="w-100">
+	<img src="images/header-waves/red-wave-flipped.svg" class="w-100" style="margin-bottom: -5px;">
 	<div style="background: #E68976;">
 	
 		<div class="container">
@@ -286,79 +205,84 @@
 		</div>
 	
 	</div>
-	</div>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+					<h3>
+						COMMUNITY
+					</h3>
+					<h2>
+						Meet Our<br>
+						Community<br>
+						Members!
+					</h2>
+				</div>
+				<div class="col-lg-9 col-md-12 col-sm-12 col-12">
+					<!--slider-->
+					<div class="slider-community m-auto">
 	
-	<!-- for later use
-	<div class="containerbanner">
-  		<a href="https://shehacks.ca/"><img src="images/shehacks.svg" style="width:100%"></a>
-  		<br><br>
-  		<a href="https://shehacks.ca/" class="btn d-none d-lg-block" style="text-decoration: none;"><p>Learn More</p></a>
- 			
-	</div>
-	-->
+						<div class="event-card m-3"  style="height: 420px;">
+							<div class="card-content">
+								<h3>JANKI CHAUDHARI</h3>
+								<div class="row my-3 vertical-center">
+									<div class="col-6">
+										<img src="images/janki.png" style="width: 100%;"></img>
+									</div>
+									<div class="col-6">
+										<p class="m-auto"><b>Computer Science</b><br>Year 3</p>
+									</div>
+								</div>
+								<p>
+									I am a rising junior studying Computer Science at the University of Western Ontario, Canada. 
+								</p>
+								<a href="https://jankichaudhari226.github.io/"  target="_blank"><button class="round-orange-button">Visit website</button></a>
+							</div>
+						</div>
 	
-<!--
-<div style="margin-top: 10%">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<h5 style="color: #E57154; font-family:rubik">COMMUNITY</h3>
-				
-			</div>
-			<div class="col">
-				
-			</div>
-			<div class="col">
-				<div style="float:right" >
-					<span onclick="pre()"><i class='fas fa-long-arrow-alt-left' style='font-size:2em; color: #ED4D47'></i></span>   <span onclick="next()"><i class='fas fa-long-arrow-alt-right' style='font-size:2em; color: #ED4D47'></i> 
+						<div class="event-card m-3"  style="height: 420px;">
+							<div class="card-content">
+								<h3>LAURA POPA</h3>
+								<div class="row my-3 vertical-center">
+									<div class="col-6">
+										<img src="images/laura.png" style="width: 100%;"></img>
+									</div>
+									<div class="col-6">
+										<p class="m-auto"><b>Computer Science</b><br>Year 4</p>
+									</div>
+								</div>
+								<p>
+									I love to explore my creative boundaries through programming as an outlet! From computer graphics to databases, the art of problem solving never gets old.
+
+								</p>
+								<a href="https://www.linkedin.com/in/laura-popa-a2767a16a/"  target="_blank"><button class="round-orange-button">Visit website</button></a>
+							</div>
+						</div>
+
+						<div class="event-card m-3"  style="height: 420px;">
+							<div class="card-content">
+								<h3>JENNY LI</h3>
+								<div class="row my-3 vertical-center">
+									<div class="col-6">
+										<img src="images/jenny.png" style="width: 100%;"></img>
+									</div>
+									<div class="col-6">
+										<p class="m-auto"><b>HBA & Software Engineering</b><br>Year 3</p>
+									</div>
+								</div>
+								<p>
+									Super interested in all things tech, especially the beautiful interfaces and well crafted user experiences of the products I use in my everyday life! 
+								</p>
+								<a href="https://lijennifer.me/"  target="_blank"><button class="round-orange-button ">Visit website</button></a>
+							</div>
+						</div>
+					</div>
+					<!--slider ends-->
 				</div>
 			</div>
 		</div>
-		
-		<div class="row reverse-col">
-			<div class="col-lg-4 col-md-2 d-none d-lg-block">
-				
-				<h2>Meet Our <br>Community <br>Members!</h2>
-			</div>
-			
-			
-			<div class="col-lg-4 col-md-5" id="div1">
-				<div class="card" style="width: 18rem; padding: 1%; ">
-					<h5 class="card-title" style="margin-left: 5%; margin-top: 7%; font-family: Rubik; font-style: normal; font-weight: bold; color: #E57154;">JANKI CHAUDHARI</h5>
-  						<img src="images/janki.png" style="width: 40%; margin-left: 5%;"></img>
-  					<div class="card-body">
-    					<h7 style="font-weight: bold">Computer Science</h7><br>
-    					<h7 style="font-weight: bold">Year 3</h7><br><br>
-   						<h7>My curiosity makes me thrive, it leads me to explore new technologies, read research papers, and take on leadership roles.</h7>
-   						<br>
-   						
-    					<a href="https://jankichaudhari226.github.io/"  target="_blank"class="btn btn-primary" style="margin-top:5%; background-color: #E68976; border:none">See website</a>
-  					</div>
-  				</div>
-			</div>
-			<div class="col-lg-4 col-md-5" id="div2">
-				<div class="card" style="width: 18rem; padding: 1%; ">
-					<h5 class="card-title" style="margin-left: 5%; margin-top: 7%; font-family: Rubik; font-style: normal; font-weight: bold; color: #E57154;">JENNY LI</h5>
-  						<img src="images/jenny.png" style="width: 40%; margin-left: 5%;"></img>
-  					<div class="card-body">
-    					<h7 style="font-weight: bold">HBA & Software Engineering</h7><br>
-    					<h7 style="font-weight: bold">Year 3</h7><br><br>
-   						<h7>Super interested in all things tech, especially the beautiful interfaces and well crafted user experiences of the products I use in my everyday life!</h7>
-   						<br>
-   						<a href="https://lijennifer.me/"   target="_blank"class="btn btn-primary" style="margin-top:5%; background-color: #E68976; border:none">See website</a>
-    					
-  					</div>
-  				</div>
-			</div>
-			
-			
-		
-		</div>
-		
-	</div>
-	
-</div>
--->
+	</section>
 	
 	
 	<div class="marginTop10" style="margin-bottom: 5%">
@@ -432,6 +356,46 @@
 					}
 
 				</script>	
+
+				<script>
+					$('.slider').slick({
+							dots: true,
+							arrows:false,
+							slidesToShow: 3,
+							slidesToScroll: 1,
+							responsive: [{
+								breakpoint: 992,
+								settings: {
+									arrows: false,
+									slidesToShow: 3,
+								}
+							},                           
+							{
+								breakpoint: 568,
+								settings: {
+									slidesToShow: 1,
+									arrows: false,
+								}
+							}]
+						});
+				</script>
+
+				<script>
+					$('.slider-community').slick({
+							dots: true,
+							arrows:false,
+							slidesToShow: 2,
+							slidesToScroll: 1,
+							responsive: [                           
+							{
+								breakpoint: 568,
+								settings: {
+									slidesToShow: 1,
+									arrows: false,
+								}
+							}]
+						});
+				</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
