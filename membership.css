@@ -40,63 +40,6 @@ td {
 	background-size:contain;
 }
 
-/* heading font */
-h1{
-	color: #0A2338;
-	font-family: Helvetica;
-	font-style: normal;
-	font-weight: bold;
-	line-height: 110%;
-}
-
-/* subtitle font */
-h2 {
-	font-family: Helvetica;
-	font-style: normal;
-	font-weight: bold;
-	color: #402B2B;
-}
-
-/* subtitle accent font */
-h3{
-	font-family: Rubik;
-	font-style: normal;
-	font-weight: bold;
-	line-height: 40px;
-	color: #E57154;
-}
-
-/* body font */
-h4 {
-	font-family: Helvetica;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 160%;
-	color: #4B5D68;
-}
-
-h5 {
-	font-family: Nunito;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 100%;
-	color: #0A2338;
-}
-
-h6 {
-
-	font-family: Helvetica;
-	font-style: normal;
-	color: #0A2338;
-
-	line-height: 160%;
-
-}
-/* body font */
-p {
-	font-family: Rubik;
-	font-weight: bold;
-}
 /*navbar*/
 nav {
     z-index: 3000;
