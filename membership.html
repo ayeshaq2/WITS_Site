@@ -242,8 +242,17 @@
 				<div class="modal-body text-center">
 						<p style="font-weight: normal; font-size:14px">
 							Certain member benefits are only available to female/non-binary and Western University students. <br>
-							<a class="buttonHover" href="membership.html">Please click here for more information.</a>
-						</p>
+							<a class="buttonHover" href="membership.html">Please click here for more information.</a></p>
+							<fieldset>
+								<label>
+								  <span style="font-size: 15px;"> Name </span>
+								  <input type="text" class="field" id="name-input" style = "border-radius: 5px;">
+								</label>
+								<label>
+									<span style="font-size: 15px;"> UWO Email id</span>
+									<input type="email" class="field" id="email-input" style = "border-radius: 5px;">
+								</label>
+							</fieldset>							
 				</div>
 				<div class="modal-footer text-center">
 					<button
@@ -258,7 +267,31 @@
 						(function() {
 							var stripe = Stripe('pk_live_51HRKErI0omsarzuVeaQCilo8REzURIoo5KZUxRd5EVQFdQTQEUgTHbYAylnUYjCeO6dKbmA44uXEhUMSuwQXCD0e001Kg3tvuu');
 							var checkoutButton = document.getElementById('checkout-button-price_1HPhoxEEILg0FKcAjGc4OHXR');
-							checkoutButton.addEventListener('click', function () {
+							var name = document.getElementById('name-input');
+                            var uwoEmail = document.getElementById('email-input');
+							button.addEventListener('click', function(e) {
+        						e.preventDefault();
+								fetch('/create-session', {
+								method: 'POST',
+								headers: {
+									'Content-Type': 'application/json',
+								},
+								body: JSON.stringify({
+									name: name.value,
+									uwoEmail: uwoEmail.value,
+								}),
+								})
+								.then((response) => response.json())
+								.then((session) => {
+								stripe.redirectToCheckout({
+									sessionId: session.id
+								});
+								})
+								.catch((error) => {
+								console.error('Error:', error);
+								});
+							});
+							/**checkoutButton.addEventListener('click', function () {
 							// When the customer clicks on the button, redirect
 							// them to Checkout.
 							stripe.redirectToCheckout({
@@ -280,7 +313,7 @@
 								displayError.textContent = result.error.message;
 								}
 							});
-							});
+							});**/
 						})();
 					</script>
 				</div>

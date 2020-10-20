@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Success!</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="checkout">
+        <div id="payment-form">
+          <h1>Success!</h1>
+
+          <p>
+          We are happy to Invite you to WITS family!<strong id="amount"></strong> to <strong id="cause"></strong>
+          </p>
+
+          
+        </div>
+      </div>
+    </div>
+    <script charset="utf-8">
+      var params = new URLSearchParams(window.location.search);
+      var sessionId = params.get('id');
+      var name = document.getElementById('name');
+      var uwoEmail = document.getElementById('uwoEmail');
+      
+      fetch('/retrieve-session?id=' + sessionId)
+      .then((response) => response.json())
+      .then((session) => {
+        name.innerText = session.metadata.name;
+        uwoEmail.innerText = session.metadata.uwoEmail;
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+    </script>
+  </body>
+</html>
