@@ -26,18 +26,19 @@ def cancel():
 def create_session():
   print("Create session is called"); 
   data = json.loads(request.data)
+  print(f'user given name: {data}')
   session = stripe.checkout.Session.create(
     success_url='http://localhost:5000/success?id={CHECKOUT_SESSION_ID}',
     cancel_url='http://localhost:5000/cancel',
     submit_type='donate',
     payment_method_types=['card'],
+    customer_email=data['uwoEmail'],
     line_items=[{
       'quantity': 1,
       'name': data['name'],
-    }],
-    metadata={
-      'uwoEmail': data['uwoEmail'],
-    }
+      'currency': 'cad',
+      'amount': 1500,
+    }]
   )
   return jsonify(session)
 
