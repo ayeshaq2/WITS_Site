@@ -54,7 +54,7 @@ def create_session():
 
 
 # TODO: Put this in the dotenv soon when deploying to prod!
-endpoint_secret = "whsec_PTOeJEwiKknXpiWEvRBDzHuN0dmL7I8y"
+endpoint_secret = "whsec_pTOeJEwIKkNxpiWEvRBDzHuN0dmL7I8y"
 @app.route('/webhook', methods=['POST'])
 def webhook():
   event = None
@@ -72,9 +72,9 @@ def webhook():
     sig_header = request.headers.get('stripe-signature')
     try:
       event = stripe.Webhook.construct_event(payload, sig_header, endpoint_secret)
-    except stripe.error.SignatureVerficationError as e:
+    except stripe.error.SignatureVerificationError as e:
       # TODO: Have this error send out as to WITS email also, potential misuse
-      print("Webhook signature verification failed" + str(e))
+      print("Webhook signature verification failed " + str(e))
       return jsonify(success=True)
   
   # Grab metadata and post full name to associated customer id!
@@ -102,4 +102,4 @@ def retrieve_session():
 
 # Start server
 if __name__ == '__main__':
-    app.run(port=4242)
+    app.run(port=5000)
