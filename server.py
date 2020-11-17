@@ -54,7 +54,7 @@ def create_session():
 
 
 # TODO: Put this in the dotenv soon when deploying to prod!
-endpoint_secret = "whsec_pTOeJEwIKkNxpiWEvRBDzHuN0dmL7I8y"
+endpoint_secret = "whsec_bFLSqri5DuglBrtbecP06DEOvXD3m8Hb"
 @app.route('/webhook', methods=['POST'])
 def webhook():
   event = None
