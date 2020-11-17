@@ -1,0 +1,261 @@
+body {
+	margin: 0;
+	display: grid;
+	height: 100%;
+}
+
+/* overall margin */
+.margin{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+/* large responsive images */
+.responsive {
+	width: 100%;
+	height: auto;
+}
+
+/* small responsive images */
+.responsive2 {
+	width: 60%;
+	height: auto;
+}
+
+.vertical-center{
+    display:flex;
+    align-items: center;
+}
+
+/* table cell padding */
+td {
+ 	padding: 5%;
+}
+
+/* membership wave bg */
+.membershipbg{
+	margin:0px;
+	background-image: url('images/membership.svg');
+	background-repeat: no-repeat;
+	background-size:contain;
+}
+
+/*navbar*/
+nav {
+    z-index: 3000;
+}
+.navbar .nav-item .nav-link {
+    font-family: "Rubik";
+    font-weight: 600;
+    color: #0A2338;
+    transition: all 0.3s ease 0s;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #E57154;
+}
+.nav-link.active {
+    color: #E57154 !important;
+  }
+.navbar-brand img {
+    width: 70px;
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E68976;
+    padding: .5rem 1rem;
+}
+.navbar .join-button{
+    background-color:  #E57154;
+    box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 25px;
+    display: inline-block;
+    font-family: "Rubik";
+    font-weight: 600;
+    color:  white;
+}
+.navbar button:hover{
+	background-color:  #0A2338;
+	transition: all 0.3s ease 0s;
+}
+.navbar ul{
+    justify-content: flex-end; 
+    font-weight: 600;
+    color: white;
+}
+
+@media (max-width: 568px){
+	.mobileimg{
+		width: 50%;
+	}
+}
+
+@media (max-width: 568px){
+	.footerimg{
+		width: 50%;
+	}
+}
+
+@media (max-width: 568px){
+	.mobilefont{
+		font-size: 1.3em; 
+	}
+}
+
+@media (max-width:991px){
+	.reverse-col{
+	   flex-direction:column-reverse;
+	   padding:5%;
+   }
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+/* make the top margin of each section 10% */
+.marginTop10{
+	margin-top: 10%;
+}
+
+/* make the top margin of each section 20% */
+.marginTop20{
+	margin-top: 20%;
+}
+
+/* make the top margin of each section 30% */
+.marginTop30{
+	margin-top: 30%;
+}
+
+.btn:focus,.btn:active {
+	outline: none !important;
+	box-shadow: none;
+ }
+
+/* lets do it button */
+.landingbutton {
+	background-color: #E68976;
+	border: none;
+	color: white;
+	font-style: normal;
+	padding: 20px 40px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 50px;
+}
+
+/* lets do it button hover properties*/
+.landingbutton:hover{
+	background-color:  #e69f91;
+	border-radius: 50px;
+}
+
+
+/* lets do it button center it */
+.centerbtn {
+  margin: 0;
+  position: absolute;
+  margin-top: 3%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50px;
+ 
+}
+
+/* lets do it button center it */
+.centerbtn:hover {
+  margin: 0;
+  position: absolute;
+  margin-top: 3%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color:  #e69f91;
+  border-radius: 50px;
+ 
+}
+
+.modal-content {
+	background-color: #F1EFE2;
+ }
+
+ .modal-header {
+    border-bottom: 0 none;
+}
+
+.modal-footer {
+    border-top: 0 none;
+}
+
+:root {
+	--mainColor: #e69f91;
+}
+  
+.buttonHover {
+	background:
+		linear-gradient(
+			to bottom, var(--mainColor) 0%,
+			var(--mainColor) 100%
+		);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 4px 4px;
+	color: #000;
+	text-decoration: none;
+	transition: background-size .6s;
+}
+  
+.buttonHover:hover {
+	background-size: 4px 50px;
+	text-decoration: none;
+	color: #000;
+}
+
+.modal-content  {
+    -webkit-border-radius: 15px !important;
+    -moz-border-radius: 15px !important;
+    border-radius: 15px !important; 
+}
+
+/* table properties */
+#membership td, #membership th {
+  border: 1px solid #ddd;
+  padding: 1% 3%;
+}
+
+/* table properties */
+#membership tr:nth-child(even){background-color: white;}
+
+/* table properties */
+#membership th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #F1EFE2;
+  color: black;
+}
+
+#membership .fa-check{
+	font-size: 30px;
+	color: green;
+}
+
+/* social media links */
+#footerimg {
+	opacity: 1.0;
+}
+
+/* social media links hover opacity change*/
+#footerimg:hover{
+	opacity: 0.7;
+}

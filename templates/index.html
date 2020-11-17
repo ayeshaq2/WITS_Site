@@ -2,328 +2,440 @@
 <html>
 
 <head>
-	<!--meta tags-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<!--title and favicon-->
-	<title>Break Into Tech</title>
+	<title>Home</title>
 	<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
-	
-	<!--stylesheets-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'> 
-	
-	<!--js-->
-	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-	<script src="https://js.stripe.com/v3"></script>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 
-    	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-   	
-    
+	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+	<!--Slick slider-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+		
     
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
+
 	<header>
 		<nav class="navbar navbar-light navbar-expand-md fixed-top">
-			<div class = "container m-auto vertical-center">
+			<div class = "container">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<a href="index.html" class="navbar-brand vertical-center" style="padding: 5px auto 2px auto;"><img src="images/wits.png" alt="she/hacks"></a>
+				<a href="/" class="navbar-brand vertical-center" style="padding: 5px auto 2px auto;"><img src="{{url_for('static', filename='images/wits.png')}}" alt="she/hacks"></a>
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="navbar-toggler-icon"></i>
 				</button>  
 				
 				<!-- collapse navbar -->
 				<div class="navbar-collapse collapse" id="navbarCollapse">
-						<ul class="navbar-nav mr-auto w-100 clearfix" >
-							<li class="nav-item vertical-center"><a class="nav-link" href="initiatives.html">INITIATIVES</a></li>
-							<li class="nav-item vertical-center"><a class="nav-link" href="partners.html">PARTNER</a></li>
-							<li class="nav-item vertical-center"><a class="nav-link" href="about.html">ABOUT US</a></li>
-							<li class="nav-item vertical-center"><a class="nav-link" target="_blank" href="https://witsuwo.wixsite.com/merch">STORE</a></li>
-							<li class="nav-item vertical-center"><a class="nav-link" href="membership.html"><button class="join-button">JOIN US</button></a></li>
-						</ul>
-					</div>
-				</div>
+					<ul class="navbar-nav mr-auto w-100 clearfix" >
+						<li class="nav-item vertical-center"><a class="nav-link" href="/initiatives">INITIATIVES</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/partners">PARTNER</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/about">ABOUT US</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" target="_blank" href="https://witsuwo.wixsite.com/merch">STORE</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/membership"><button class="join-button">JOIN US</button></a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
-	<!--landing page-->
-	<section style="background: #E68976; padding-top: 10%;">
+	
+	
+	
+	
+	<section class="main-splash" style="background: #F1EFE2;">
 		<div class="container">
 			<div class="row reverse-col">
 				<div class="col-lg-6 m-auto">
-						<h1>Break into tech <br>with WITS!<h1>
-						<br>
-							<h4 style="color: #0A2338; font-family:nunito">Ready to take a stand and join the tech community? 
-							Become a member of the WITS family and receive access 
-							to a wonderful network of changemakers and resources to 
-							get you involved in tech!</h4>
+					<h1>Building a Future for Women+ in Tech</h1>
+					<br>
+					<h4 style="line-height: 160%; font-family:Nunito; color: #0A2338;">
+						At Women in Technology Society, we’re here
+						to support you in your journey through the
+						tech world, join our community today!
+					</h4>
+					<br>
+					<a class="landingbutton" href="/membership">Join our community</a>
 				</div>
-				<div class="col-lg-6">
-						<img src="images/membershippic.png" alt="main pic" width="90%" >
+				<div class="col-lg-1"></div>
+				<div class="col-lg-5 col-sm-12 col-12 m-auto py-5 horizontal-center">
+					<img class="mobileimg" src="{{url_for('static', filename='images/mainpic.png')}}" alt="main pic" width="100%">
+				</div>
+			</div>
+		</div>
+	</section>
+	<img src="{{url_for('static', filename='images/header-waves/beige-wave.svg')}}" class="w-100 mb-5" style="margin-top: -5px;">
+	
+	
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-12 m-auto">
+					<br>
+					<img src="{{url_for('static', filename='images/empoweringwomen.png')}}" class="mobileimg2" style="width:100%">
+					<br>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-12 m-auto">
+					<br>
+					<img src="{{url_for('static', filename='images/buildingnetworks.png')}}" class="mobileimg2" style="width:100%">
+					<br>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-12 m-auto">
+					<br>
+					<img src="{{url_for('static', filename='images/creatingpipelines.png')}}" class="mobileimg2" style="width:100%">
+					<br>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+					<h3>
+						EVENTS
+					</h3>
+					<h2>
+						Upcoming<br>Events
+						
+					</h2>
+					<br>
+						<a href="/events" ><button class="round-orange-button">See all events</button></a>
+				</div>
+				<div class="col-lg-9 col-md-12 col-sm-12 col-12">
+					<!--slider-->
+					<div class="slider m-auto">
+	
+						<div class="event-card m-3"  style="height: 260px;">
+							<div class="card-content">
+								<h3>Software Engineering Interview Prep</h3>
+								<p>You'll be learning the most common types of coding questions asked during SWE interviews.</p>
+								<p><b>September 21st, 2020</b><p>
+							</div>
+						</div>
+	
+						<div class="event-card m-3"  style="height: 260px;">
+							<div class="card-content">
+								<h3>Design Interview Prep</h3>
+								<p>This workshop will be spent learning about design processes, UX/UI, usability testing etc.</p>
+								<p><b>September 23rd, 2020</b><p>
+							</div>
+						</div>
+	
+						<div class="event-card m-3"  style="height: 260px;">
+							<div class="card-content">
+								<h3>PM Interview Prep</h3>
+								<p>This workshop will be spent learning about Product Sense and Analytical questions.</p>
+								<p><b>September 25th, 2020</b><p>
+							</div>
+						</div>
+
+						<div class="event-card m-3" style="height: 260px;">
+							<div class="card-content">
+								<h3>Intro to Python</h3>
+								<p>Come learn about the basics of coding with Python!</p>
+								<p><b>October 15, 2020</b><p>
+							</div>
+						</div>
+
+						<div class="event-card m-3" style="height: 260px;">
+							<div class="card-content">
+								<h3>GitHub Overview</h3>
+								<p>Come join this months casual work night - this session's theme includes a GitHub overview!</p>
+								<p><b>October 19th, 2020</b><p>
+							</div>
+						</div>
+					</div>
+					<!--slider ends-->
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="marginTop5Footer">
+	<img src="{{url_for('static', filename='images/header-waves/red-wave-flipped.svg')}}" class="w-100" style="margin-bottom: -5px;">
+	<div style="background: #E68976; margin-bottom: 3%">
+	
+		<div class="container">
+			<div class="container">
+			<div class="row reverse-col ">
+				<div class="col m-auto" >
+					<img src="{{url_for('static', filename='images/woman.png')}}" class="d-none d-lg-block m-auto" width="60%" >
+				</div>
+				
+				<div class="col  m-auto" >
+					<div class="elementpadding">
+					
+					<h4 style="color: white; font-weight: bold ">Mentorship Programs</h4>
+					<br>
+					<h6 style="color: white; line-height: 170%;font-family:Nunito">Our ongoing Ada Mentorship and Hack with
+					Heart programs will provide a strong network of mentors to help you build a project and arm
+					you with skills to excel in the industry.</h6>
+					<br>
+					<a class="initbutton" style="font-family: Rubik; text-decoration: none; color:  #E68976;" href="ada.html">Learn more</a>
+					</div>
+					
+				</div>
+			</div>
+				<br><br>
+			<div class="row reverse-col">
+				
+				
+				
+				<div class="col mx-auto m-auto"  >
+					<div class="elementpadding">
+					<h4 style="color: white; font-weight: bold">Blog and Podcast</h4>
+					<br>
+					<h6 style="color: white; line-height: 170%; font-family:Nunito">Hear and read the thoughts of powerful women in tech! Join us as we delve into their stories and insights.</h6>
+					<br>
+					<a class="initbutton" style="font-family: Rubik; text-decoration: none; color: #E68976;" href="blog.html">Learn more</a>
+					</div>
+				</div>
+				
+				<div class="col ">
+					<div class="vertical-center">
+					<img src="{{url_for('static', filename='images/trailblazehers.png')}}" class="d-none d-lg-block m-auto" width="60%" >
+					</div>
 				</div>
 			</div>
 			<br><br><br>
+			</div>
 		</div>
-	</section>
-	<!--landing page wave-->
-	<img src="images/membership-wave.svg" class="w-100 mb-5" style="margin-top: -5px;">	
-	<!--landing page ends-->
 	
-	<!--membership table-->
-	<a name="membershiptable"></a>
-	<div class="container py-5">
-		<table class="table" id="membership">
-			<!--table headings-->
-			<tr>
-				<th class="align-middle"><h4 style="font-family:helvetica; font-weight: bold; color:black">Membership Perks</h4>
-					<h6 style="line-height:120%; font-family: nunito; color: black; font-weight: 700;">Available to all genders from any university</h6>
-				</th>
-				<th style="padding:2%">
-					<h6 style="text-align: center; line-height:120%; font-family: Rubik; color: #E57154; font-weight: 700;">GENERAL MEMBER</h6>
-					<h2 style="text-align: center;">Free</h2>
-				</th>
-					<th style="padding:2%">
-						<h6 style="text-align: center; line-height:120%; font-family: Rubik; color: #E57154; font-weight: 700;">WITS MEMBER</h6>
-						<h2 style="text-align: center;">$15</h2>
-				</th>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Workshops and Educational Events</h5></td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-					<td><h5 style="color:black; margin-top:1%">Recruiting Series</h5></td>
-					<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-					<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Cookies and Code Events</h5></td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Advanced registration to limited capacity events</h5></td>
-				<td align="center">  </td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Access to exclusive tech resources and opportunities</h5></td>
-				<td align="center">   </td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Bi-weekly member newsletters</h5></td>
-				<td align="center">  </td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Exclusive profile feature on WITS website</h5></td>
-				<td>  </td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Free or discounted entry for ticketed events</h5></td>
-				<td>  </td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Discount code for the WITS merch store.</h5></td>
-				<td>  </td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Resume editing and review by WITS execs</h5></td>
-				<td>  </td>
-				<td align="center"><i class="fa fa-check" style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr style="background-color: #F1EFE2;">
-				<td><h5 style="color:black; font-weight: 600; padding: 2% 0">These perks are available for female & non-binary Western University students only</h5></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Resume database for recruiters</h5></td>
-				<td>  </td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Exclusive access to our Ada Mentorship Program</h5></td>
-				<td>  </td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Exclusive access to our Hack with Heart Program</h5></td>
-				<td>  </td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-			<!--membership perks row-->
-			<tr>
-				<td><h5 style="color:black; margin-top:1%">Exclusive access to our Tech Coffee Chat series</h5></td>
-				<td> </td>
-				<td align="center"><i class="fa fa-check"style="color:#E68976;"></i></td>
-			</tr>
-		</table>
 	</div>
-	<!--join us section-->
-	<section style="background: #F4D089; padding: 5% 0; margin-top: 1%">
-		<div class="container-fluid">
-			<h2 style="text-align:center">Ready to join a community of boss women?</h2>
-			<br><Br>
-			<!--join us button-->
-			<div class="row justify-content-center">
-				<button type="button" class="btn btn-lg rounded-pill landingbutton" style="color: white; font-family: Rubik;" data-toggle="modal" data-target="#membershipWarning">Let's do it</button>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-12 col-sm-12 col-12">
+					<h3>
+						COMMUNITY
+					</h3>
+					<h2>
+						Meet Our<br>
+						Community<br>
+						Members!
+					</h2>
+				</div>
+				<div class="col-lg-9 col-md-12 col-sm-12 col-12">
+					<!--slider-->
+					<div class="slider-community m-auto">
+	
+						<div class="event-card m-3"  style="height: 420px;">
+							<div class="card-content">
+								<h3>JANKI CHAUDHARI</h3>
+								<div class="row my-3 vertical-center">
+									<div class="col-6">
+										<img src="{{url_for('static', filename='images/janki.png')}}" style="width: 100%;"></img>
+									</div>
+									<div class="col-6">
+										<p class="m-auto"><b>Computer Science</b><br>Year 3</p>
+									</div>
+								</div>
+								<p>
+									I am a rising junior studying Computer Science at the University of Western Ontario, Canada. 
+								</p>
+								<a href="https://jankichaudhari226.github.io/"  target="_blank"><button class="round-orange-button">Visit website</button></a>
+							</div>
+						</div>
+	
+						<div class="event-card m-3"  style="height: 420px;">
+							<div class="card-content">
+								<h3>LAURA POPA</h3>
+								<div class="row my-3 vertical-center">
+									<div class="col-6">
+										<img src="{{url_for('static', filename='images/laura.png')}}" style="width: 100%;"></img>
+									</div>
+									<div class="col-6">
+										<p class="m-auto"><b>Computer Science</b><br>Year 4</p>
+									</div>
+								</div>
+								<p>
+									I love to explore my creative boundaries through programming as an outlet! From computer graphics to databases, the art of problem solving never gets old.
+
+								</p>
+								<a href="https://www.linkedin.com/in/laura-popa-a2767a16a/"  target="_blank"><button class="round-orange-button">Visit website</button></a>
+							</div>
+						</div>
+
+						<div class="event-card m-3"  style="height: 420px;">
+							<div class="card-content">
+								<h3>JENNY LI</h3>
+								<div class="row my-3 vertical-center">
+									<div class="col-6">
+										<img src="{{url_for('static', filename='images/jenny.png')}}" style="width: 100%;"></img>
+									</div>
+									<div class="col-6">
+										<p class="m-auto"><b>HBA & Software Engineering</b><br>Year 4</p>
+									</div>
+								</div>
+								<p>
+									Super interested in all things tech, especially the beautiful interfaces and well crafted user experiences of the products I use in my everyday life! 
+								</p>
+								<a href="https://lijennifer.me/"  target="_blank"><button class="round-orange-button ">Visit website</button></a>
+							</div>
+						</div>
+					</div>
+					<!--slider ends-->
+				</div>
 			</div>
 		</div>
 	</section>
-	<!--join us section-->
+	
+	
+<!-- footer -->
+<footer>
+	<div class="marginTop5Footer" style="margin-bottom: 5%">
+		<!-- footer key text -->
+		<div class="container">
+			  <div class="row">
+				  <div class="col-lg-10 col-sm-12 col-12">
+					<h6>
+						Women in Technology Society
+					</h6>
+					<p>
+						1151 Richmond St, London, ON N6A 3K7<br>
+						<a href="mailto:wits.uwo@gmail.com" class="link">wits.uwo@gmail.com</a><br>
+						Made with &#10084;&#65039;&nbspin London, ON
+					</p>
+					<br>
+				  </div>
+				  <!-- footer social media for desktop view -->
+				  <div class="col-lg-2 col-sm-12 col-12">
+					  <div class="social-icon"><a href="http://www.instagram.com/wits.uwo/" target="_blank"><img src="{{url_for('static', filename='images/instagram.png')}}" alt="instagram" style="width: 100%"></a></div>
+					  <div class="social-icon"><a href="https://www.linkedin.com/company/uwowits/" target="_blank"><img src="{{url_for('static', filename='images/linkedin.png')}}" alt="twitter" style="width: 100%"></a></div>
+					<div class="social-icon"><a href="http://www.facebook.com/wits.uwo/" target="_blank"><img src="{{url_for('static', filename='images/facebooksmall.png')}}" alt="facebook" style="width: 100%"></a></div>  					
+				  </div>
+			  </div>
+		  </div>
+	</div>
+</footer>
+
 
 	
-	<!-- footer -->
-	<footer>
-		<div class="marginTop5Footer" style="margin-bottom: 5%">
-			<!-- footer key text -->
-			<div class="container">
-  				<div class="row">
-  					<div class="col-lg-10 col-sm-12 col-12">
-						<h6>
-							Women in Technology Society
-						</h6>
-						<p>
-							1151 Richmond St, London, ON N6A 3K7<br>
-							<a href="mailto:wits.uwo@gmail.com" class="link">wits.uwo@gmail.com</a><br>
-							Made with &#10084;&#65039;&nbspin London, ON
-						</p>
-						<br>
-  					</div>
-  					<!-- footer social media for desktop view -->
-  					<div class="col-lg-2 col-sm-12 col-12">
-  						<div class="social-icon"><a href="http://www.instagram.com/wits.uwo/" target="_blank"><img src="images/instagram.png" alt="instagram" style="width: 100%"></a></div>
-  						<div class="social-icon"><a href="https://www.linkedin.com/company/uwowits/" target="_blank"><img src="images/linkedin.png" alt="twitter" style="width: 100%"></a></div>
-						<div class="social-icon"><a href="http://www.facebook.com/wits.uwo/" target="_blank"><img src="images/facebooksmall.png" alt="facebook" style="width: 100%"></a></div>  					
-  					</div>
-  				</div>
-  			</div>
-		</div>
-	</footer>
+	<!-- js to make carousel interactive -->
+				<script>
+					var idx=1;
+					var len = 7; 	// there's 7 test elements at the moment
+					display();
 
-	<!-- Modal -->
-	<div class="modal fade" id="membershipWarning" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					function pre(){ // display previous card
+    					idx--;
+						if (idx === 0){
+							idx = 1;
+						}
+						display();
+					}
+
+					function next(){ // display next card
+    					idx++;
+						if (idx === 7){
+							idx = 6;
+						}
+						display();
+					}
+
+					function display(){ // card display function
+						var div ;
+    					for (var i = 1; i<= len; i++){
+							div = document.getElementById('div' + i);
+							if (i === idx || i=== (idx + 1)){ // display two cards at a time
+								div.style.display = "";
+							} else {
+								div.style.display = "none";
+							}
+    					}
+					}
+
+				</script>	
+
+				<script>
+					$('.slider').slick({
+							dots: true,
+							arrows:false,
+							slidesToShow: 3,
+							slidesToScroll: 1,
+							responsive: [{
+								breakpoint: 992,
+								settings: {
+									arrows: false,
+									slidesToShow: 3,
+								}
+							},                           
+							{
+								breakpoint: 568,
+								settings: {
+									slidesToShow: 1,
+									arrows: false,
+								}
+							}]
+						});
+				</script>
+
+				<script>
+					$('.slider-community').slick({
+							dots: true,
+							arrows:false,
+							slidesToShow: 2,
+							slidesToScroll: 1,
+							responsive: [                           
+							{
+								breakpoint: 568,
+								settings: {
+									slidesToShow: 1,
+									arrows: false,
+								}
+							}]
+						});
+				</script>
+	
+	<div class="modal fade" id="successModal" role="dialog">
 		<div class="modal-dialog modal-dialog-centered modalroundedcorners" role="document">
 			<div class="modal-content py-4 px-5 rounded-lg">
 				<button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
-				<div class="modal-header text-center">
-					<h4 class="modal-title" id="exampleModalLongTitle" style="color: #0A2338; font-size: 23px">Please ensure to use your <b>university email</b> as WITS memberships are only open to students. </h4>
+				<div class="modal-header">
+					<svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="500px">
+						<circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+						<path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+					</svg>
 				</div>
 				<div class="modal-body text-center">
-						<p style="font-weight: normal; font-size:14px">
-							Certain member benefits are only available to female/non-binary and Western University students. <br>
-							<a class="buttonHover" href="membership.html">Please click here for more information.</a></p>
-							<fieldset>
-								<label>
-								  <span style="font-size: 15px;"> Name </span>
-								  <input type="text" class="field" id="name-input" style = "border-radius: 5px;">
-								</label>
-								<label>
-									<span style="font-size: 15px;"> UWO Email id</span>
-									<input type="email" class="field" id="email-input" style = "border-radius: 5px;">
-								</label>
-							</fieldset>							
-				</div>
-				<div class="modal-footer text-center">
-					<button
-					class="btn btn-sm rounded-pill landingbutton mx-auto" style="color: white; font-family: Rubik; font-size: 16px"
-					id="checkout-button-price_1HPhoxEEILg0FKcAjGc4OHXR"
-					role="link"
-					target="_blank"
-					type="button">
-					Continue to Checkout
-					</button>
-					<script>
-						(function() {
-							var stripe = Stripe('pk_test_51HRKErI0omsarzuVR7978FWk7lxy1pWKDwhB3ZFu9sck0HdTROIxTXmKDPVRoinvcF1AsHpBpItBf51A2Z2hLM7800qcHRmkD1');
-							var checkoutButton = document.getElementById('checkout-button-price_1HPhoxEEILg0FKcAjGc4OHXR');
-							var name = document.getElementById('name-input');
-                            var uwoEmail = document.getElementById('email-input');
-							checkoutButton.addEventListener('click', function(e) {
-        						e.preventDefault();
-								fetch('/create-session', {
-								method: 'POST',
-								headers: {
-									'Content-Type': 'application/json',
-								},
-								body: JSON.stringify({
-									name: name.value,
-									uwoEmail: uwoEmail.value,
-								}),
-								})
-								.then((response) => response.json())
-								.then((session) => {
-								stripe.redirectToCheckout({
-									sessionId: session.id
-								});
-								})
-								.catch((error) => {
-								console.error('Error:', error);
-								});
-							});
-							/**checkoutButton.addEventListener('click', function () {
-							// When the customer clicks on the button, redirect
-							// them to Checkout.
-							stripe.redirectToCheckout({
-								lineItems: [{price: 'price_1HSDP8I0omsarzuVHy5RQSYL', quantity: 1}],
-								mode: 'payment',
-								// Do not rely on the redirect to the successUrl for fulfilling
-								// purchases, customers may not always reach the success_url after
-								// a successful payment.
-								// Instead use one of the strategies described in
-								// https://stripe.com/docs/payments/checkout/fulfillment
-								successUrl: "https://wits-uwo.ca?paymentSuccess=1",
-								cancelUrl: "https://wits-uwo.ca/",
-							})
-							.then(function (result) {
-								if (result.error) {
-								// If `redirectToCheckout` fails due to a browser or network
-								// error, display the localized error message to your customer.
-								var displayError = document.getElementById('error-message');
-								displayError.textContent = result.error.message;
-								}
-							});
-							});**/
-						})();
-					</script>
+						<p style="font-weight: normal; font-size:18px">
+								<strong style="font-size:22px">Welcome to the WITS community! </strong>
+								<br>
+								A receipt will be emailed to you shortly.
+						</p>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div id="error-message"></div>
+	<script>
+		$(window).on('load',function(){
+			var url_string = window.location.href;
+			var url = new URL(url_string);
+			var c = url.searchParams.get("paymentSuccess");
+			if (c == 1) {
+				$('#successModal').modal('show');
+			}
+		});
+	</script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
+
 </html>
