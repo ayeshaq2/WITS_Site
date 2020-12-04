@@ -16,6 +16,26 @@ def index():
 def membership():
   return render_template('membership.html')
 
+@app.route('/about')
+def about():
+  return render_template('about.html')
+
+@app.route('/initiatives')
+def initiatives():
+  return render_template('initiatives.html')
+
+@app.route('/partners')
+def partners():
+  return render_template('partners.html')
+
+@app.route('/blog')
+def blog():
+  return render_template('blog.html')
+
+@app.route('/ada')
+def ada():
+  return render_template('ada.html')
+
 @app.route('/events')
 def events():
   return render_template('events.html')
@@ -52,9 +72,7 @@ def create_session():
   )
   return jsonify(session)
 
-
-# TODO: Put this in the dotenv soon when deploying to prod!
-endpoint_secret = "whsec_bFLSqri5DuglBrtbecP06DEOvXD3m8Hb"
+endpoint_secret = os.getenv('STRIPE_WEBHOOK_SECRET')
 @app.route('/webhook', methods=['POST'])
 def webhook():
   event = None

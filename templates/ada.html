@@ -10,8 +10,8 @@
 	<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
  
-	<link rel="stylesheet" type="text/css" href="ada.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ada.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'> 
 
@@ -28,7 +28,7 @@
 		<nav class="navbar navbar-light navbar-expand-md fixed-top">
 			<div class = "container">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<a href="index.html" class="navbar-brand vertical-center" style="padding: 5px auto 2px auto;"><img src="images/wits.png" alt="she/hacks"></a>
+				<a href="/" class="navbar-brand vertical-center" style="padding: 5px auto 2px auto;"><img src="{{url_for('static', filename='images/wits.png')}}" alt="she/hacks"></a>
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="navbar-toggler-icon"></i>
 				</button>  
@@ -36,11 +36,11 @@
 				<!-- collapse navbar -->
 				<div class="navbar-collapse collapse" id="navbarCollapse">
 					<ul class="navbar-nav mr-auto w-100 clearfix">
-						<li class="nav-item vertical-center"><a class="nav-link" href="initiatives.html">INITATIVES</a></li>
-						<li class="nav-item vertical-center"><a class="nav-link" href="partners.html">PARTNER</a></li>
-						<li class="nav-item vertical-center"><a class="nav-link" href="about.html">ABOUT US</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/initiatives">INITATIVES</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/partners">PARTNER</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/about">ABOUT US</a></li>
 						<li class="nav-item vertical-center"><a class="nav-link" target="_blank" href="https://witsuwo.wixsite.com/merch">STORE</a></li>
-						<li class="nav-item vertical-center"><a class="nav-link" href="membership.html"><button class="join-button">JOIN US</button></a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/membership"><button class="join-button">JOIN US</button></a></li>
 					</ul>
 				</div>
 			</div>
@@ -75,13 +75,13 @@
 	
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12 mt-4">
-					<img src="images/exposure.png" width="100%" height="auto">
+					<img src="{{url_for('static', filename='images/exposure.png')}}" width="100%" height="auto">
 				</div>
 				<div class="col-lg-4  col-md-4 col-sm-12 mt-4">
-					<img src="images/skills.png" width="100%" height="auto">
+					<img src="{{url_for('static', filename='images/skills.png')}}" width="100%" height="auto">
 				</div>
 				<div class="col-lg-4  col-md-4 col-sm-12 mt-4">
-					<img src="images/support.png" width="100%" height="auto">
+					<img src="{{url_for('static', filename='images/support.png')}}" width="100%" height="auto">
 				</div>
 			</div>
 		</div>	
@@ -170,7 +170,7 @@
 					<h4 style="font-family: nunito">Coming soon...</h4>
 				</div>
 				<div class="col-lg-5 horizontal-center w-100 p-4">
-					<img src="images/hackwithheart.png" alt="hwh pic" width="50%">
+					<img src="{{url_for('static', filename='images/hackwithheart.png')}}" alt="hwh pic" width="50%">
 				</div>	
 			</div>
 		</div>
@@ -229,7 +229,7 @@
 									Not only will this project benefit Relay for Life and contribute to the growth of their events campaign, but it will also promote their foundational principle, celebrating life and giving hope to those living with cancer.
 								</p>
 								<div class="horizontal-center w-100">
-									<img src="images/ccs.png" alt="canadian cancer society" class="responsive" width="300px" height="300px"></p>
+									<img src="{{url_for('static', filename='images/ccs.png')}}" alt="canadian cancer society" class="responsive" width="300px" height="300px"></p>
 								</div>
 							</div>
 						</div>
@@ -260,9 +260,9 @@
   					
   					<!-- footer social media for desktop view -->
   					<div class="col-lg-2 col-sm-12 col-12">
-  						<div class="social-icon"><a href="http://www.instagram.com/wits.uwo/" target="_blank"><img src="images/instagram.png" alt="instagram" style="width: 100%"></a></div>
-  						<div class="social-icon"><a href="https://www.linkedin.com/company/uwowits/" target="_blank"><img src="images/linkedin.png" alt="twitter" style="width: 100%"></a></div>
-						<div class="social-icon"><a href="http://www.facebook.com/wits.uwo/" target="_blank"><img src="images/facebooksmall.png" alt="facebook" style="width: 100%"></a></div>  					
+  						<div class="social-icon"><a href="http://www.instagram.com/wits.uwo/" target="_blank"><img src="{{url_for('static', filename='images/instagram.png')}}" alt="instagram" style="width: 100%"></a></div>
+  						<div class="social-icon"><a href="https://www.linkedin.com/company/uwowits/" target="_blank"><img src="{{url_for('static', filename='images/linkedin.png')}}" alt="twitter" style="width: 100%"></a></div>
+						<div class="social-icon"><a href="http://www.facebook.com/wits.uwo/" target="_blank"><img src="{{url_for('static', filename='images/facebooksmall.png')}}" alt="facebook" style="width: 100%"></a></div>  					
   					</div>
   				</div>
   			</div>

@@ -9,8 +9,8 @@
 	
 	<link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="blog.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='blog.css') }}">
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'> 
 	<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
 	
@@ -27,7 +27,7 @@
 		<nav class="navbar navbar-light navbar-expand-md fixed-top">
 			<div class = "container">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<a href="index.html" class="navbar-brand vertical-center" style="padding: 5px auto 2px auto;"><img src="images/wits.png" alt="she/hacks"></a>
+				<a href="/" class="navbar-brand vertical-center" style="padding: 5px auto 2px auto;"><img src="{{ url_for('static', filename='images/wits.png') }}" alt="she/hacks"></a>
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<i class="navbar-toggler-icon"></i>
 				</button>  
@@ -35,11 +35,11 @@
 				<!-- collapse navbar -->
 				<div class="navbar-collapse collapse" id="navbarCollapse">
 					<ul class="navbar-nav mr-auto w-100 clearfix">
-						<li class="nav-item vertical-center"><a class="nav-link" href="initiatives.html">INITIATIVES</a></li>
-						<li class="nav-item vertical-center"><a class="nav-link" href="partners.html">PARTNER</a></li>
-						<li class="nav-item vertical-center"><a class="nav-link" href="about.html">ABOUT US</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/initiatives">INITIATIVES</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/partners">PARTNER</a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/about">ABOUT US</a></li>
 						<li class="nav-item vertical-center"><a class="nav-link" target="_blank" href="https://witsuwo.wixsite.com/merch">STORE</a></li>
-						<li class="nav-item vertical-center"><a class="nav-link" href="membership.html"><button class="join-button">JOIN US</button></a></li>
+						<li class="nav-item vertical-center"><a class="nav-link" href="/membership"><button class="join-button">JOIN US</button></a></li>
 					</ul>
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 			<div class="row">
 			
 				<div class="col-5 col-md-5 text-center">
-					<a href="https://open.spotify.com/show/5as4zJCEU6zHAv0hwdZGFE?si=InbX0VusQO6vwCWbeDd2EA"target="_blank" ><img src="images/google.png"  alt="blog pic" ></a>
+					<a href="https://open.spotify.com/show/5as4zJCEU6zHAv0hwdZGFE?si=InbX0VusQO6vwCWbeDd2EA"target="_blank" ><img src="{{ url_for('static', filename='images/google.png') }}"  alt="blog pic" ></a>
 					<h5 style="text-align: center; color: #0A2338;"> Google's VP of User <br> Experience<br></h5>
 					<a href="https://open.spotify.com/show/5as4zJCEU6zHAv0hwdZGFE?si=InbX0VusQO6vwCWbeDd2EA" target="_blank" class="btn btn-sm rounded-pill landingbutton justify-content-center" style="color: white; font-family: Rubik;">Listen on Spotify</a>
 					
@@ -88,7 +88,7 @@
 				</div>
 				
 				<div class="col-5 col-md-5 text-center">
-					<a href="https://open.spotify.com/show/5as4zJCEU6zHAv0hwdZGFE?si=InbX0VusQO6vwCWbeDd2EA"target="_blank" ><img src="images/cloud.png" alt="blog pic"></a>	
+					<a href="https://open.spotify.com/show/5as4zJCEU6zHAv0hwdZGFE?si=InbX0VusQO6vwCWbeDd2EA"target="_blank" ><img src="{{ url_for('static', filename='images/cloud.png') }}" alt="blog pic"></a>	
 					<h5 style="text-align: center; color: #0A2338;"> In the Cloud with Erin <br> Chapple<br></h5>
 					<a href="https://open.spotify.com/show/5as4zJCEU6zHAv0hwdZGFE?si=InbX0VusQO6vwCWbeDd2EA"  target="_blank" class="btn btn-sm rounded-pill landingbutton" style="color: white; font-family: Rubik;">Listen on Spotify</a>
 				</div>
@@ -113,17 +113,17 @@
 			<div class="row">
 			
 				<div class="col">
-					<a href="https://medium.com/@wits.uwo/the-ultimate-survival-guide-to-social-distancing-e80419fd0329" target="_blank" ><img src="images/social.png" alt="blog pic"></a>
+					<a href="https://medium.com/@wits.uwo/the-ultimate-survival-guide-to-social-distancing-e80419fd0329" target="_blank" ><img src="{{ url_for('static', filename='images/social.png') }}" alt="blog pic"></a>
 					<h5 style="text-align: center; color:#0A2338"> The Ultimate Survival Guide to Social Distancing</h5>
 					
 				</div>
 				<div class="col">
-					<a href="https://medium.com/@wits.uwo/insurance-tech-how-telematics-and-fitness-devices-are-changing-the-industry-9a670caa7987"target="_blank" ><img src="images/insurance.png" alt="blog pic" ></a>	
+					<a href="https://medium.com/@wits.uwo/insurance-tech-how-telematics-and-fitness-devices-are-changing-the-industry-9a670caa7987"target="_blank" ><img src="{{ url_for('static', filename='images/insurance.png') }}" alt="blog pic" ></a>	
 					<h5 style="text-align: center; color:#0A2338"> Insurance tech: How Telematics and Fitness Devices Are Changing The Industry</h5>
 					
 				</div>
 				<div class="col">
-					<a href="https://medium.com/@wits.uwo/googles-vp-of-ux-designing-your-own-future-3b5271e84b06"target="_blank" ><img src="images/googleux.png" alt="blog pic" ></a>	
+					<a href="https://medium.com/@wits.uwo/googles-vp-of-ux-designing-your-own-future-3b5271e84b06"target="_blank" ><img src="{{ url_for('static', filename='images/googleux.png') }}" alt="blog pic" ></a>	
 					<h5 style="text-align: center; color:#0A2338"> Google’s VP of UX: Designing your own Future</h5>
 					
 				</div>
@@ -155,9 +155,9 @@
   					
   					<!-- footer social media for desktop view -->
   					<div class="col-lg-2 col-sm-12 col-12">
-  						<div class="social-icon"><a href="http://www.instagram.com/wits.uwo/" target="_blank"><img src="images/instagram.png" alt="instagram" style="width: 100%"></a></div>
-  						<div class="social-icon"><a href="https://www.linkedin.com/company/uwowits/" target="_blank"><img src="images/linkedin.png" alt="twitter" style="width: 100%"></a></div>
-						<div class="social-icon"><a href="http://www.facebook.com/wits.uwo/" target="_blank"><img src="images/facebooksmall.png" alt="facebook" style="width: 100%"></a></div>  					
+  						<div class="social-icon"><a href="http://www.instagram.com/wits.uwo/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="instagram" style="width: 100%"></a></div>
+  						<div class="social-icon"><a href="https://www.linkedin.com/company/uwowits/" target="_blank"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="twitter" style="width: 100%"></a></div>
+						<div class="social-icon"><a href="http://www.facebook.com/wits.uwo/" target="_blank"><img src="{{ url_for('static', filename='images/facebooksmall.png') }}" alt="facebook" style="width: 100%"></a></div>  					
   					</div>
   				</div>
   			</div>
