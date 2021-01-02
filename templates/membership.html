@@ -220,10 +220,10 @@
   					</div>
   					<!-- footer social media for desktop view -->
   					<div class="col-lg-2 col-sm-12 col-12">
-  						<div class="social-icon"><a href="http://www.instagram.com/wits.uwo/" target="_blank"><img src="images/instagram.png" alt="instagram" style="width: 100%"></a></div>
-  						<div class="social-icon"><a href="https://www.linkedin.com/company/uwowits/" target="_blank"><img src="images/linkedin.png" alt="twitter" style="width: 100%"></a></div>
-						<div class="social-icon"><a href="http://www.facebook.com/wits.uwo/" target="_blank"><img src="images/facebooksmall.png" alt="facebook" style="width: 100%"></a></div>  					
-  					</div>
+						<div class="social-icon"><a href="http://www.instagram.com/wits.uwo/" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="instagram" style="width: 100%"></a></div>
+						<div class="social-icon"><a href="https://www.linkedin.com/company/uwowits/" target="_blank"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="twitter" style="width: 100%"></a></div>
+					    <div class="social-icon"><a href="http://www.facebook.com/wits.uwo/" target="_blank"><img src="{{ url_for('static', filename='images/facebooksmall.png') }}" alt="facebook" style="width: 100%"></a></div>  					
+					</div>
   				</div>
   			</div>
 		</div>
@@ -242,7 +242,7 @@
 				<div class="modal-body text-center">
 						<p style="font-weight: normal; font-size:14px">
 							Certain member benefits are only available to female/non-binary and Western University students. <br>
-							<a class="buttonHover" href="membership.html">Please click here for more information.</a></p>
+							<a class="buttonHover" href="/membership">Please click here for more information.</a></p>
 							<fieldset>
 								<label>
 								  <span style="font-size: 15px;"> Full Name </span>
