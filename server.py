@@ -57,8 +57,8 @@ def create_session():
   data = json.loads(request.data)
   print(f'user given name: {data}')
   session = stripe.checkout.Session.create(
-    success_url='/?paymentSuccess=1',
-    cancel_url='/?paymentSuccess=1',
+    success_url='http://localhost:5000/success?id={CHECKOUT_SESSION_ID}',
+    cancel_url='http://localhost:5000/?paymentSuccess=1',
     submit_type='donate',
     payment_method_types=['card'],
     customer_email=data['uwoEmail'],
