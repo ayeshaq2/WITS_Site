@@ -8,3 +8,33 @@ When we create a checkout session, the user metadata is appended to Stripe Check
 
 Here's a diagram to illustrate how the components work:
 ![alt text](<DiagramWITS.jpg>)
+
+# Deployment 
+All DNS records are managed on Digital Ocean, they cannot be changed on GoDaddy as it's been delegated to Digital Ocean (to undo this, change nameservers on GoDaddy for the domain to default). All changes to DNS records should be made on Digital Ocean. 
+
+This repo is deployed on a Digital Ocean droplet, using nginx and gunicorn for production. SSL certificate is self signed using certbot (https://letsencrypt.org/). Ideally, there should be no git pushes from the prod server to this repository. This is to prevent any accidental leaks of private information on this repo.
+
+To push changes to production, follow these steps:
++ Push changes to this repo
++ Login to droplet using password
++ git pull changes
++ Run `sudo systemctl restart wits_site`
++ Run `sudo systemctl restart nginx`
+
+Changes will be deployed and should be applied within ~1-2 minutes of restarting.
+
+System uses systemd unit files to run the server processes. Here are the paths of some important files for debugging:
+```
+/etc/systemd/system/wits_site.service
+/etc/nginx/sites-available/wits_site
+```
+If any changes are made to the nginx site-available wits_site file, be sure to run: `sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled`, to apply those changes. Moreover, also run `sudo nginx -t` to ensure changes do not contain syntax errors.
+
+Should errors occurs, you can check these logs:
++ `sudo less /var/log/nginx/error.log`: checks the Nginx error logs.
++ `sudo less /var/log/nginx/access.log`: checks the Nginx access logs.
++ `sudo journalctl -u nginx`: checks the Nginx process logs.
++ `sudo journalctl -u wits_site`: checks the Flask app’s Gunicorn logs.
+
+You can read more about deployment process here: https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-20-04
+
