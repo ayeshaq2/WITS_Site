@@ -4,14 +4,14 @@ This is the repo for the live version of the WITS website at www.wits-uwo.ca.
 
 .env file should never be pushed on the repo. It contains sensitive API keys that cannot be shared with malicious attackers. 
 
-# Checkout Flow
+# Testing
+This repo contains a Heroku valid procfile that you can use to test changes before pushing them to production. Once changes are pushed to the repo, open up Heroku and deploy this repo as an app. A project specific url should be created that you can use to test any changes you've made. 
 
-The website uses Stripe Checkout to proces payments. All processing, authentication, and more is done on Stripe's end. All we do is redirect the user to the Stripe checkout page and back to our website. Since Stripe Checkout does not allow for custom fields, we ask the customer for their full name and email beforehand so we can update their customer record later. This is important for us as having their preferred name and email in our records allows us to integrate with Hubspot seamlessly with no manual effort.
-
-When we create a checkout session, the user metadata is appended to Stripe Checkout data. It is propogated throughout all steps of the process. We then utilize webhooks to actively listen for whenever a checkout.session.completed event occurs, which is our cue we have a new paying member to WITS. When the event triggers, our listener takes in the event data and updates the customer record with the corresponding user metadata we obtained earlier. The Stripe Customer record now contains their preferred name, email, and confirmation they are a WITS member. 
-
-Here's a diagram to illustrate how the components work:
-![alt text](<DiagramWITS.jpg>)
+If you'd like to test locally instead, execute the following steps in the root directory of the repo:
+```
+export FLASK_APP=server.py
+flask run
+```
 
 # Deployment 
 All DNS records are managed on Digital Ocean, they cannot be changed on GoDaddy as it's been delegated to Digital Ocean (to undo this, change nameservers on GoDaddy for the domain to default). All changes to DNS records should be made on Digital Ocean. 
@@ -43,3 +43,12 @@ Should errors occurs, you can check these logs:
 
 You can read more about deployment process here: https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-gunicorn-and-nginx-on-ubuntu-20-04
 
+
+# Checkout Flow
+
+The website uses Stripe Checkout to proces payments. All processing, authentication, and more is done on Stripe's end. All we do is redirect the user to the Stripe checkout page and back to our website. Since Stripe Checkout does not allow for custom fields, we ask the customer for their full name and email beforehand so we can update their customer record later. This is important for us as having their preferred name and email in our records allows us to integrate with Hubspot seamlessly with no manual effort.
+
+When we create a checkout session, the user metadata is appended to Stripe Checkout data. It is propogated throughout all steps of the process. We then utilize webhooks to actively listen for whenever a checkout.session.completed event occurs, which is our cue we have a new paying member to WITS. When the event triggers, our listener takes in the event data and updates the customer record with the corresponding user metadata we obtained earlier. The Stripe Customer record now contains their preferred name, email, and confirmation they are a WITS member. 
+
+Here's a diagram to illustrate how the components work:
+![alt text](<DiagramWITS.jpg>)
