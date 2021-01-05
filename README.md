@@ -1,5 +1,9 @@
 # WITS_Site
 
+This is the repo for the live version of the WITS website at www.wits-uwo.ca. 
+
+.env file should never be pushed on the repo. It contains sensitive API keys that cannot be shared with malicious attackers. 
+
 # Checkout Flow
 
 The website uses Stripe Checkout to proces payments. All processing, authentication, and more is done on Stripe's end. All we do is redirect the user to the Stripe checkout page and back to our website. Since Stripe Checkout does not allow for custom fields, we ask the customer for their full name and email beforehand so we can update their customer record later. This is important for us as having their preferred name and email in our records allows us to integrate with Hubspot seamlessly with no manual effort.
