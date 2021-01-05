@@ -26,6 +26,7 @@ Changes will be deployed and should be applied within ~1-2 minutes of restarting
 System uses systemd unit files to run the server processes. Here are the paths of some important files for debugging:
 ```
 /etc/systemd/system/wits_site.service
+/WITS_Site/wsgi.py
 /etc/nginx/sites-available/wits_site
 ```
 If any changes are made to the nginx site-available wits_site file, be sure to run: `sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled`, to apply those changes. Moreover, also run `sudo nginx -t` to ensure changes do not contain syntax errors.
