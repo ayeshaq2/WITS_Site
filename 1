@@ -57,8 +57,9 @@ def create_session():
   data = json.loads(request.data)
   print(f'user given name: {data}')
   session = stripe.checkout.Session.create(
-    success_url='https://wits-uwo.ca/?paymentSuccess=1',
+    success_url='https://wits-uwo.ca/success?id={CHECKOUT_SESSION_ID}',
     cancel_url='http://wits-uwo.ca/',
+    submit_type='donate',
     payment_method_types=['card'],
     customer_email=data['uwoEmail'],
     metadata={'customerName' : data['name']},
