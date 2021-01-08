@@ -52,3 +52,8 @@ When we create a checkout session, the user metadata is appended to Stripe Check
 
 Here's a diagram to illustrate how the components work:
 ![alt text](<DiagramWITS.jpg>)
+
+# Future Work
+
++ The checkout flow currently does not have sufficient error handling. Failed payments and webhook requests should have alerts/emails sent out to wits.uwo@gmail.com. 
++ Currently Zapier is used to bridge between Stripe Customers and Hubspot. Can create an internal API to routinely load in users to Hubspot with no rate limits (can use webhooks for this)
