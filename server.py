@@ -105,7 +105,7 @@ def webhook():
     checkout_session_obj = event['data']['object']
     print(f'Recieved following data {checkout_session_obj}')
     customer_name = checkout_session_obj['metadata']['customerName']
-    customer_email = checkout_session_obj['metadata']['customer_email']
+    customer_email = checkout_session_obj['customer_email']
     customer_id = checkout_session_obj['customer']
     update_response = stripe.Customer.modify(customer_id, name=customer_name)
     # Push contact details onto hubspot
@@ -130,6 +130,7 @@ def retrieve_session():
 def create_hubspot_contact(email, name):
   name = name.split()
   first_name = name[0]
+  last_name = ""
   # Naiive error handling if user only provides first name
   if (len(name) >= 2):
      last_name = name[1]
