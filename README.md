@@ -2,7 +2,7 @@
 
 This is the repo for the live version of the WITS website at www.wits-uwo.ca. 
 
-.env file should never be pushed on the repo. It contains sensitive API keys that cannot be shared with malicious attackers. 
+.env file should never be pushed on the repo. It exists only on the Digital Ocean droplet. All references to it should be done using the `os` module in Python. See `server.py` for how to reference the keys in a safe manner. It contains sensitive API keys that cannot be shared with malicious attackers. 
 
 # Testing
 This repo contains a Heroku valid procfile that you can use to test changes before pushing them to production. Once changes are pushed to the repo, open up Heroku and deploy this repo as an app. A project specific url should be created that you can use to test any changes you've made. 
@@ -56,4 +56,4 @@ Here's a diagram to illustrate how the components work:
 # Future Work
 
 + The checkout flow currently does not have sufficient error handling. Failed payments and webhook requests should have alerts/emails sent out to wits.uwo@gmail.com. 
-+ Currently Zapier is used to bridge between Stripe Customers and Hubspot. Can create an internal API to routinely load in users to Hubspot with no rate limits (can use webhooks for this)
++ Email webhook that sends "welcome to WITS" emails to new members, containing all pertinent information to their membership
