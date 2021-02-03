@@ -2,10 +2,17 @@ import stripe
 import json
 import os
 from flask import Flask, render_template, jsonify, request
+from hubspot import HubSpot
+from hubspot.crm.contacts import SimplePublicObjectInput
+from hubspot.crm.contacts.exceptions import ApiException
 from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
+
+# Loading secrets
 stripe.api_key = os.getenv('STRIPE_SECRET_KEY')
+hubspot = HubSpot(api_key=os.getenv('HUBSPOT_SECRET_KEY'))
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -98,8 +105,11 @@ def webhook():
     checkout_session_obj = event['data']['object']
     print(f'Recieved following data {checkout_session_obj}')
     customer_name = checkout_session_obj['metadata']['customerName']
+    customer_email = checkout_session_obj['metadata']['customer_email']
     customer_id = checkout_session_obj['customer']
     update_response = stripe.Customer.modify(customer_id, name=customer_name)
+    # Push contact details onto hubspot
+    create_hubspot_contact(customer_email, customer_name)
   else:
     # We don't handle for this event, we leave it, don't need email alerts for this
     print(f"Unhandled event type {event['type']}")
@@ -115,6 +125,25 @@ def retrieve_session():
     expand=['payment_intent'],
   )
   return jsonify(session)
+
+
+def create_hubspot_contact(email, name):
+  name = name.split()
+  first_name = name[0]
+  # Naiive error handling if user only provides first name
+  if (len(name) >= 2):
+     last_name = name[1]
+  try:
+    simple_public_object_input = SimplePublicObjectInput(
+        properties={"email": email,
+                    "firstname": first_name,
+                    "lastname": last_name}
+    )
+    api_response = hubspot.crm.contacts.basic_api.create(
+        simple_public_object_input=simple_public_object_input
+    )
+  except ApiException as e:
+    print("Exception when creating contact: %s\n" % e)
 
 # Start server
 if __name__ == '__main__':
