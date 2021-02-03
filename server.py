@@ -64,10 +64,9 @@ def create_session():
     metadata={'customerName' : data['name']},
     line_items=[{
       'quantity': 1,
-      'name': "WITS 2020/21 Club Membership",
-      'currency': 'cad',
-      'amount': 1500,
-    }]
+      'price': "price_1HSDP8I0omsarzuVHy5RQSYL",
+    }],
+    mode="payment",
   )
   return jsonify(session)
 
