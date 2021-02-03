@@ -59,4 +59,4 @@ Here's a diagram to illustrate how the components work:
 
 + The checkout flow currently does not have sufficient error handling. Failed payments and webhook requests should have alerts/emails sent out to wits.uwo@gmail.com. 
 + Email webhook that sends "welcome to WITS" emails to new members, containing all pertinent information to their membership
-+ Clean up the repository, lot of unneccessary files are beign currently tracked that can be removed
++ Clean up the repository, lot of unneccessary files are being currently tracked that can be removed
