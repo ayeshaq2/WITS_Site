@@ -50,6 +50,8 @@ The website uses Stripe Checkout to process payments. All processing, authentica
 
 When we create a checkout session, the user metadata is appended to Stripe Checkout data. It is propogated throughout all steps of the process. We then utilize webhooks to actively listen for whenever a checkout.session.completed event occurs, which is our cue we have a new paying member to WITS. When the event triggers, our listener takes in the event data and updates the customer record with the corresponding user metadata we obtained earlier. The Stripe Customer record now contains their preferred name, email, and confirmation they are a WITS member. 
 
+Lastly, in the webhook, an additional function is called `create_hubspot_contact` which takes the Stripe customer record (first name, last name, email) and creates a Hubspot contact for them. This isn't illustrated in the diagram, but you can look at `server.py` to see how it's implemented.
+
 Here's a diagram to illustrate how the components work:
 ![alt text](<DiagramWITS.jpg>)
 
