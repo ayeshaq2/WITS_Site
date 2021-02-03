@@ -1,4 +1,4 @@
-# Women in Technology Website
+# WITS Website
 
 This is the repo for the live version of the WITS website at www.wits-uwo.ca. 
 
