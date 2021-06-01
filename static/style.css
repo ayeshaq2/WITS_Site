@@ -137,14 +137,34 @@ p{
 }
 
 /*footer*/
-.social-icon{
+ul.social-icon {
     float:right; 
     width: 50px;
     height: 50px;
-    margin: 0 1%;
+    padding: 2px;
 }
 
 .social-icon:hover{
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.wits-social {
+    float: right;
+    display: inline-block;
+}
+
+.wits-social li {
+    list-style-type: none;
+    display: inline-block
+}
+
+.wits-social img {
+    width: 50px;
+    padding-right: 3px;
+}
+
+.wits-social img:hover {
     opacity: 0.5;
     transition: all 0.3s ease;
 }
@@ -160,6 +180,9 @@ p{
 
 @media (max-width: 768px){
     .social-icon{
+        float: left;
+    }
+    .wits-social{
         float: left;
     }
 }
