@@ -25,6 +25,7 @@ nav {
     width: 70px;
 }
 .navbar {
+    align-self:first baseline;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -96,10 +97,16 @@ nav {
 
 .headshot, img{
 	width: 100%;
+    
 }
 
 .headshot{
 	border-radius: 100%;
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover;
+    align-items: center;
+    justify-items: center;
 }
 
 .headshot:hover{
