@@ -1,0 +1,243 @@
+* {
+	box-sizing: border-box;
+}
+
+/* overall page margin */
+.margin{
+	padding-left: 15%;
+	padding-right: 15%;
+}
+
+/* make the top margin of each section 10% */
+.marginTop10{
+	margin-top: 10%;
+}
+
+/* make the top margin of each section 40% */
+.marginTop20{
+	margin-top: 20%;
+}
+
+/* small responsive images */
+.responsive {
+	width: 100%;
+	height: auto;
+}
+/* large responsive images */
+.responsive2 {
+	width: 70%;
+	height: auto;
+}
+
+/* heading text */
+h1{
+	color: #0A2338;
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 110%;
+}
+
+/* subtitle text */
+h2 {
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 140%;
+	color: #402B2B;
+}
+
+/* subtitle highlight text */
+h3{
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: bold;
+	line-height: 40px;
+	color: #E57154;
+}
+
+/* body text */
+h4{
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 160%;
+	color: #4B5D68;
+}
+
+h5{
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: 700;
+	color: #0A2338;
+}
+
+h6 {
+
+	font-family: Helvetica;
+	font-style: normal;
+	color: #0A2338;
+
+	line-height: 160%;
+
+}
+
+/* body text */
+p {
+	font-family: Rubik;
+	color: #0A2338;
+}
+
+
+/* rectangle within the card */
+.rectangle {
+  	border-radius: 20px;
+  	padding: 2%; 
+  	width: 40%;
+  	height: 10%;  
+}
+
+
+/* social media links */
+#footerimg {
+	opacity: 1.0;
+}
+
+/* social media links hover opacity change*/
+#footerimg:hover{
+	opacity: 0.7;
+}
+
+
+/*navbar*/
+nav {
+    z-index: 3000;
+}
+.navbar .nav-item .nav-link {
+    font-family: "Rubik";
+    font-weight: 600;
+    color: #0A2338;
+    transition: all 0.3s ease 0s;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #E57154;
+}
+.nav-link.active {
+    color: #E57154 !important;
+  }
+.navbar-brand img {
+    width: 70px;
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #B3E2D4;
+    padding: .5rem 1rem;
+}
+.navbar .join-button{
+    background-color:  #E57154;
+    box-sizing: border-box;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 25px;
+    display: inline-block;
+    font-family: "Rubik";
+    font-weight: 600;
+    color:  white;
+}
+.navbar button:hover{
+	background-color:  #0A2338;
+	transition: all 0.3s ease 0s;
+}
+.navbar ul{
+    justify-content: flex-end; 
+    font-weight: 600;
+    color: white;
+}
+/*navbar*/
+
+.vertical-center{
+    display:flex;
+    align-items: center;
+}
+
+.horizontal-center{
+    text-align: center;
+}
+	
+
+.teal-background{
+	background-color: #B3E2D4;
+}
+
+.event-carousel-row{
+	border-radius: 25px;
+	margin: 70px 0;
+}
+
+.event-carousel-row-margin{
+	padding-bottom: 5%;
+}
+
+@media(max-width: 568px){
+	.event-carousel-row-margin{
+		padding-bottom: 9%;
+	}
+}
+
+/* @media(min-width: 992px){
+	.card-content{
+		text-align: left;
+		padding: 20px;
+	}
+	
+} */
+
+/* card properties
+.card {
+  box-shadow: 0 4px 8px 0 rgba(255,0,0,0.2);
+  transition: 0.3s;
+  width: 70%;
+  background: white;
+  border-radius: 5px;
+}
+
+/* card hover shadow */
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */ */
+
+
+
+.card-img{
+	width: 101%;
+	height: 101%;
+	padding: 0;
+	margin-top: -1px;
+	border-radius: 0;
+}
+.event-card{
+    box-shadow: 0 4px 8px 0 rgba(255,0,0,0.2);
+	transition: 0.3s;
+	background: white;
+	border-radius: 20px;
+	width: 30%;
+	overflow: hidden;
+}
+
+.event-card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.event-card > a:hover {
+	text-decoration: none;
+}
+.card-content{
+	text-align: left;
+	padding: 10%;
+}
+
+section{
+	padding: 4rem 0 0 0;
+}
