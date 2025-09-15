@@ -1,7 +1,7 @@
 import stripe
 import json
 import os
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, redirect
 from hubspot import HubSpot
 from hubspot.crm.contacts import SimplePublicObjectInput
 from hubspot.crm.contacts.exceptions import ApiException
@@ -21,7 +21,7 @@ def index():
 
 @app.route('/membership')
 def membership():
-  return render_template('membership.html')
+    return redirect("https://tally.so/r/waWXX2", code=302)
 
 @app.route('/about')
 def about():

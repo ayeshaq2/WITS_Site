@@ -4,3 +4,6 @@
 .env.staging
 .idea/
 .DS_Store
+dotenv
+__pycache__/
+stripe
